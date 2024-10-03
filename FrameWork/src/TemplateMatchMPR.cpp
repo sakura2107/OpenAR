@@ -31,7 +31,7 @@ bool ar::multiPointsRecognition(int* res,
                 ssd += (size_t)(image[image_y * image_width + image_x] - temp[temp_y * temp_width + temp_x]) *
                     (image[image_y * image_width + image_x] - temp[temp_y * temp_width + temp_x]);
             }
-            if (ssd < (size_t)num_points * 5000 * (1 - threshold) && ssd < cur_min_ssd) {
+            if (ssd < (size_t)num_points * 0.05f * 255 * 255 * (1 - threshold) && ssd < cur_min_ssd) {
                 res[0] = w; res[1] = h;
                 cur_min_ssd = ssd;
             }

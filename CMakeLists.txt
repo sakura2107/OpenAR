@@ -7,9 +7,9 @@ if(ENABLE_CUDA)
 endif()
 
 if(ENABLE_CUDA)
-    project(AutoRun LANGUAGES CXX CUDA)
+    project(OpenAR LANGUAGES CXX CUDA)
 else()
-    project(AutoRun LANGUAGES CXX)
+    project(OpenAR LANGUAGES CXX)
 endif()
 
 

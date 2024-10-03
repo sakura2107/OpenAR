@@ -19,19 +19,47 @@ void pcr::execute_activity(pcr::global_params& params) {
 
     bool is_uncomplete = true;
 
-#define f() \
-    params.controller->click(802, 891); \
-    ar::point p_main_line = params.image_recognition->compareImageReturnCentrePoint(frame, main_line, 0.95f); \
-    if (!p_main_line.is_empty) stop_condition = true;
-	FUNCTION_LOOPS(f);
-#undef f
+    stop_condition = false; times = 0;
+    do {
+        Sleep(params.operate_duration); times++; 
+        if (times > params.run_max_times) {
+            ar::error("Runtime too long !"); 
+            std::exit(0);
+        } 
+        
+        cv::Mat frame; 
+        params.controller->screencap(frame); 
+        if (frame.empty()) {
+            ar::error("Frame empty !"); 
+            params.controller->disconnect(); 
+            std::exit(0);
+        } 
+        
+        params.controller->click(802, 891); 
+        ar::point p_main_line = params.image_recognition->compareImageReturnCentrePoint(frame, main_line, 0.95f); 
+        if (!p_main_line.is_empty) stop_condition = true;
+    } while (!stop_condition);
 
-#define f() \
-    params.controller->click(152, 891); \
-    ar::point p_store_icon = params.image_recognition->compareImageReturnCentrePoint(frame, store_icon, 0.95f); \
-    if (!p_store_icon.is_empty) stop_condition = true;
-	FUNCTION_LOOPS(f);
-#undef f
+    stop_condition = false; times = 0; 
+    do {
+        Sleep(params.operate_duration); times++; 
+        if (times > params.run_max_times) {
+            ar::error("Runtime too long !"); 
+            std::exit(0);
+        } 
+        
+        cv::Mat frame;
+        params.controller->screencap(frame); 
+        if (frame.empty()) {
+            ar::error("Frame empty !"); 
+            params.controller->disconnect();
+            std::exit(0);
+        } 
+        
+        params.controller->click(152, 891); 
+        ar::point p_store_icon = params.image_recognition->compareImageReturnCentrePoint(frame, store_icon, 0.95f);
+        if (!p_store_icon.is_empty) stop_condition = true;
+    } while (!stop_condition);
 
 #define f() \
     if(times % 5 == 0)params.controller->click(1350, 220); \

@@ -11,8 +11,8 @@ void pcr::login(pcr::global_params& params)
 
     bool stop_condition = false;
     int times = 0;
-    ar::info("Start launch pcr !");
 
+    ar::info("Start launch pcr !");
     stop_condition = false; times = 0; 
     do {
         Sleep(params.operate_duration); times++; if (times > params.run_max_times) {
@@ -20,11 +20,13 @@ void pcr::login(pcr::global_params& params)
         } 
         cv::Mat frame; 
         params.controller->screencap(frame); 
+
         if (frame.empty()) {
             ar::error("Frame empty !");
             params.controller->disconnect();
             std::exit(0);
         }
+
         params.controller->click(804, 890); 
         ar::point p_skip = params.image_recognition->compareImageReturnCentrePoint(frame, skip, 0.95f); 
         if (!p_skip.is_empty) params.controller->click(p_skip.x, p_skip.y); 

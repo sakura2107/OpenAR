@@ -1,4 +1,3 @@
-#pragma execution_character_set("utf-8")  
 #include <iostream>
 #include <string>
 #include <Init.h>
@@ -31,21 +30,21 @@ int main(){
                               ar::deviceControllerType::MUMU);
     
     params.start_with_silence = false;
-    params.operate_duration = 300;
+    params.operate_duration = 200;
 
-    //pcr::checkImageCompareRate(ar::imageRecognitionType::MPR);
+    pcr::checkImageCompareRate(ar::imageRecognitionType::MPR);
 
     pcr::launchDevice(params);
     pcr::login(params);
-    //pcr::execute_schedule(params);
-    //pcr::receive_gifts(params);
+    pcr::execute_schedule(params);
+    pcr::receive_gifts(params);
     pcr::main_line_normal_params normal_params;
     normal_params.is_auto_execute_in_multi_drop = true;
-    //pcr::main_line_normal(params, normal_params);
-    //pcr::store_params s_params;
-    //s_params.is_buy_lotion = true;
-    //s_params.is_buy_refining_stone = true;
-    //pcr::Store(params, s_params);
+    pcr::main_line_normal(params, normal_params);
+    pcr::store_params s_params;
+    s_params.is_buy_lotion = true;
+    s_params.is_buy_refining_stone = true;
+    pcr::Store(params, s_params);
     pcr::execute_activity(params);
     return 0;
 }
