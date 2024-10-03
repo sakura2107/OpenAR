@@ -39,6 +39,7 @@ bool ar::AdbController::connect() {
 
 bool ar::AdbController::disconnect() {
 	//command .\adb\adb.exe disconnect 127.0.0.1:xxxxx
+	//command .\adb\adb.exe kill-server
 	bool err = false;
 	if (!is_initialize) return false;
 	std::string cmd_res;

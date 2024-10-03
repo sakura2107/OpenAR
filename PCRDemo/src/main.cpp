@@ -8,7 +8,6 @@
 #include <ReceiveGifts.h>
 #include <MainLineNormal.h>
 #include <Store.h>
-#include <Activity.h>
 #include <Log/MiniLog.h>
 #include <TextRecognition/TesseractOCR.h>
 
@@ -32,8 +31,10 @@ int main(){
     params.start_with_silence = false;
     params.operate_duration = 200;
 
+    //Compare image speed
     pcr::checkImageCompareRate(ar::imageRecognitionType::MPR);
 
+    //task
     pcr::launchDevice(params);
     pcr::login(params);
     pcr::execute_schedule(params);
@@ -45,6 +46,5 @@ int main(){
     s_params.is_buy_lotion = true;
     s_params.is_buy_refining_stone = true;
     pcr::Store(params, s_params);
-    pcr::execute_activity(params);
     return 0;
 }

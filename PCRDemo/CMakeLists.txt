@@ -15,7 +15,6 @@ add_library(PCRLib STATIC ${PROJECT_SOURCE_DIR}/PCRDemo/src/Init.cpp
                           ${PROJECT_SOURCE_DIR}/PCRDemo/src/ReceiveGifts.cpp
                           ${PROJECT_SOURCE_DIR}/PCRDemo/src/MainLineNormal.cpp
                           ${PROJECT_SOURCE_DIR}/PCRDemo/src/MainLineVeryHard.cpp
-                          ${PROJECT_SOURCE_DIR}/PCRDemo/src/Activity.cpp
                           ${PROJECT_SOURCE_DIR}/PCRDemo/src/MainLineHard.cpp
                           ${PROJECT_SOURCE_DIR}/PCRDemo/src/Store.cpp)
 
