@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{909e361c-6ab3-4af3-bb24-343d17525fe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{b787aab7-2522-4998-8505-fd738cd9d5ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Cmd">
+      <UniqueIdentifier>{8c924a33-3c04-4ec7-9b49-d003bbe49f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ImageRecognition">
+      <UniqueIdentifier>{d3456f6d-e5b4-40c4-9e2b-ea766ac5ad87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Controller">
+      <UniqueIdentifier>{9b57d413-e5da-488b-bf47-9603af1280f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DeviceController">
+      <UniqueIdentifier>{6f672400-7b4e-4f8a-87fa-c7ba9a9c1a36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Log">
+      <UniqueIdentifier>{b187a313-298f-47b3-966c-3e014396543a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\TextRecognition">
+      <UniqueIdentifier>{ff22720e-1f03-4de8-bb15-0f88103a1fea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ARFrameWork\include\Cmd\CmdTools.hpp">
+      <Filter>include\Cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\Controller\AdbController.h">
+      <Filter>include\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\Controller\Controller.h">
+      <Filter>include\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\Controller\ControllerParams.hpp">
+      <Filter>include\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\Controller\MuMuController.h">
+      <Filter>include\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\DeviceController\DeviceController.h">
+      <Filter>include\DeviceController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\DeviceController\DeviceParams.hpp">
+      <Filter>include\DeviceController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\DeviceController\MuMuDeviceController.h">
+      <Filter>include\DeviceController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\CudaMultiPointsRecognition.h">
+      <Filter>include\ImageRecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\ImageParams.hpp">
+      <Filter>include\ImageRecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\ImageRecognition.h">
+      <Filter>include\ImageRecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\MultiPointsRecognition.h">
+      <Filter>include\ImageRecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchMPR.h">
+      <Filter>include\ImageRecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchORB.h">
+      <Filter>include\ImageRecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\Log\MiniLog.h">
+      <Filter>include\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TesseractOCR.h">
+      <Filter>include\TextRecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TextMatchTesseractOCR.h">
+      <Filter>include\TextRecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TextParams.hpp">
+      <Filter>include\TextRecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TextRecognition.h">
+      <Filter>include\TextRecognition</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ARFrameWork\src\AdbController.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\Controller.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\CudaMultiPointsRecognition.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\DeviceController.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\MiniLog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\MultiPointsRecognition.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\MuMuController.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\MuMuDeviceController.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\TemplateMatchMPR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\TesseractOCR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\TextMatchTesseractOCR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

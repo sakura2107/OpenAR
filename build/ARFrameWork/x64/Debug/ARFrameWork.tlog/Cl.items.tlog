@@ -1,0 +1,13 @@
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\AdbController.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\AdbController.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\Controller.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\Controller.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\CudaMultiPointsRecognition.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\CudaMultiPointsRecognition.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\DeviceController.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\DeviceController.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\ImageRecognition.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\ImageRecognition.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\MiniLog.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\MiniLog.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\MultiPointsRecognition.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\MultiPointsRecognition.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\MuMuController.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\MuMuController.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\MuMuDeviceController.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\MuMuDeviceController.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\TemplateMatchMPR.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\TemplateMatchMPR.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\TesseractOCR.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\TesseractOCR.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\TextMatchTesseractOCR.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\TextMatchTesseractOCR.obj
+C:\Users\caiji\Desktop\OpenAR\ARFrameWork\src\TextRecognition.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\x64\Debug\TextRecognition.obj

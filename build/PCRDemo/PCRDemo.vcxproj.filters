@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{3f27f695-70b8-465c-ba74-a54d518d4a67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{ffc1031f-ae79-4b54-98f3-44427a928584}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\PCRDemo\include\CloseDevice.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\define.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\ExecuteSchedule.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\Init.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\LaunchDevice.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\Login.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\MainLineHard.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\MainLineNormal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\MainLineVeryHard.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\PCRParams.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\ReceiveGifts.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PCRDemo\include\Store.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\PCRDemo\src\CloseDevice.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PCRDemo\src\ExecuteSchedule.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PCRDemo\src\Init.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PCRDemo\src\LaunchDevice.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PCRDemo\src\Login.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PCRDemo\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PCRDemo\src\MainLineHard.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PCRDemo\src\MainLineNormal.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PCRDemo\src\MainLineVeryHard.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PCRDemo\src\ReceiveGifts.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PCRDemo\src\Store.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

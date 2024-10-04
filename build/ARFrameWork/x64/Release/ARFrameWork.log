@@ -1,0 +1,14 @@
+﻿  AdbController.cpp
+  Controller.cpp
+  CudaMultiPointsRecognition.cpp
+  DeviceController.cpp
+  ImageRecognition.cpp
+  MiniLog.cpp
+  MultiPointsRecognition.cpp
+  MuMuController.cpp
+  MuMuDeviceController.cpp
+  TemplateMatchMPR.cpp
+  TesseractOCR.cpp
+  TextMatchTesseractOCR.cpp
+  TextRecognition.cpp
+  ARFrameWork.vcxproj -> C:\Users\caiji\Desktop\OpenAR\build\ARFrameWork\Release\ARFrameWork.lib

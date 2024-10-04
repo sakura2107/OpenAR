@@ -53,11 +53,19 @@ void pcr::checkImageCompareRate(ar::imageRecognitionType image_recognition_type)
     cv::Mat temp = cv::imread("./res/test/2.png");
     ar::point p;
     ar::ImageRecognitionFactory image_recognition_factory;
-    std::unique_ptr<ar::ImageRecognition> image_recognition = image_recognition_factory.createIamgeRecognition(image_recognition_type);
+    auto image_recognition = image_recognition_factory.createIamgeRecognition(image_recognition_type);
     auto start = std::chrono::high_resolution_clock::now();
     p = image_recognition->compareImageReturnCentrePoint(image, temp, 0.95f);
     auto end = std::chrono::high_resolution_clock::now();
     if(!p.is_empty) ar::info("x: {} y: {}", p.x, p.y);
     std::chrono::duration<double, std::milli> duration = end - start;
-    ar::info("Match two image use {} ms !", (int)duration.count());
+    switch (image_recognition_type) {
+    case(ar::imageRecognitionType::MPR):
+        ar::info("MPR Match two image use {} ms !", (int)duration.count());
+        break;
+    case(ar::imageRecognitionType::MPR_CUDA):
+        ar::info("MPR_CUDA Match two image use {} ms !", (int)duration.count());
+        break;
+    //add other compare image method maybe ...
+    }
 }

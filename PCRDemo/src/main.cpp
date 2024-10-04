@@ -22,7 +22,7 @@ int main(){
                               16416,
                               ar::controllerType::MUMU, 
                               #if defined(ENABLE_CUDA)
-                              ar::imageRecognitionType::MPR,
+                              ar::imageRecognitionType::MPR_CUDA,
                               #else
                               ar::imageRecognitionType::MPR,
                               #endif
@@ -32,10 +32,10 @@ int main(){
     params.operate_duration = 200;
 
     //Compare image speed
-    pcr::checkImageCompareRate(ar::imageRecognitionType::MPR);
+    pcr::checkImageCompareRate(ar::imageRecognitionType::MPR_CUDA);
 
     //task
-    pcr::launchDevice(params);
+    /*pcr::launchDevice(params);
     pcr::login(params);
     pcr::execute_schedule(params);
     pcr::receive_gifts(params);
@@ -45,6 +45,6 @@ int main(){
     pcr::store_params s_params;
     s_params.is_buy_lotion = true;
     s_params.is_buy_refining_stone = true;
-    pcr::Store(params, s_params);
+    pcr::Store(params, s_params);*/
     return 0;
 }

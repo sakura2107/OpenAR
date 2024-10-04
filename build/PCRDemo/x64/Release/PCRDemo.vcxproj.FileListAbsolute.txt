@@ -1,0 +1,12 @@
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\opencv_core4.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\zlib1.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\opencv_imgcodecs4.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\opencv_imgproc4.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\jpeg62.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\libwebpdecoder.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\libwebp.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\libsharpyuv.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\libpng16.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\tiff.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\Release\liblzma.dll
+C:\Users\caiji\Desktop\OpenAR\build\PCRDemo\x64\Release\PCRDemo.vcxproj.CopyComplete
