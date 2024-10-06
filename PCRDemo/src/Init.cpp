@@ -63,8 +63,13 @@ void pcr::checkImageCompareRate(ar::imageRecognitionType image_recognition_type)
     case(ar::imageRecognitionType::MPR):
         ar::info("MPR Match two image use {} ms !", (int)duration.count());
         break;
+#if defined(ENABLE_CUDA)
     case(ar::imageRecognitionType::MPR_CUDA):
         ar::info("MPR_CUDA Match two image use {} ms !", (int)duration.count());
+        break;
+#endif
+    case(ar::imageRecognitionType::PSR):
+        ar::info("PSR Match two image use {} ms !", (int)duration.count());
         break;
     //add other compare image method maybe ...
     }

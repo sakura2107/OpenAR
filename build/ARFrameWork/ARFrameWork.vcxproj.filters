@@ -29,6 +29,21 @@
     <Filter Include="include\TextRecognition">
       <UniqueIdentifier>{ff22720e-1f03-4de8-bb15-0f88103a1fea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Controller">
+      <UniqueIdentifier>{5bb3e11f-28c3-41be-a810-d1a9a8e6d15c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DeviceController">
+      <UniqueIdentifier>{6a9e930c-5f53-4478-8711-773a5ac77764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ImageRecognition">
+      <UniqueIdentifier>{125b179c-2087-4609-b0ad-08dcf81125f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Log">
+      <UniqueIdentifier>{c1571554-7f78-46e8-9833-0fde5b4e42ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\TextRecognition">
+      <UniqueIdentifier>{b85e8304-2922-404f-bb5a-2c99cef75adb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\ARFrameWork\include\Cmd\CmdTools.hpp">
@@ -70,9 +85,6 @@
     <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchMPR.h">
       <Filter>include\ImageRecognition</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchORB.h">
-      <Filter>include\ImageRecognition</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\ARFrameWork\include\Log\MiniLog.h">
       <Filter>include\Log</Filter>
     </ClInclude>
@@ -88,46 +100,58 @@
     <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TextRecognition.h">
       <Filter>include\TextRecognition</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\PrefixSumRecognition.h">
+      <Filter>include\ImageRecognition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchPSR.h">
+      <Filter>include\ImageRecognition</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\ARFrameWork\src\AdbController.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\Controller\AdbController.cpp">
+      <Filter>src\Controller</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\Controller.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\Controller\Controller.cpp">
+      <Filter>src\Controller</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\CudaMultiPointsRecognition.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\Controller\MuMuController.cpp">
+      <Filter>src\Controller</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\DeviceController.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\DeviceController\DeviceController.cpp">
+      <Filter>src\DeviceController</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\DeviceController\MuMuDeviceController.cpp">
+      <Filter>src\DeviceController</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\MiniLog.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\CudaMultiPointsRecognition.cpp">
+      <Filter>src\ImageRecognition</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\MultiPointsRecognition.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\ImageRecognition.cpp">
+      <Filter>src\ImageRecognition</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\MuMuController.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\MultiPointsRecognition.cpp">
+      <Filter>src\ImageRecognition</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\MuMuDeviceController.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\TemplateMatchMPR.cpp">
+      <Filter>src\ImageRecognition</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\TemplateMatchMPR.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\Log\MiniLog.cpp">
+      <Filter>src\Log</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\TesseractOCR.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition\TesseractOCR.cpp">
+      <Filter>src\TextRecognition</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\TextMatchTesseractOCR.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition\TextMatchTesseractOCR.cpp">
+      <Filter>src\TextRecognition</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition\TextRecognition.cpp">
+      <Filter>src\TextRecognition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\PrefixSumRecognition.cpp">
+      <Filter>src\ImageRecognition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\TemplateMatchPSR.cpp">
+      <Filter>src\ImageRecognition</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

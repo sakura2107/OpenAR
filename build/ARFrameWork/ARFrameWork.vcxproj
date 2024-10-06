@@ -31,8 +31,9 @@
     <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\ImageParams.hpp" />
     <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\ImageRecognition.h" />
     <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\MultiPointsRecognition.h" />
+    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\PrefixSumRecognition.h" />
     <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchMPR.h" />
-    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchORB.h" />
+    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchPSR.h" />
     <ClInclude Include="..\..\ARFrameWork\include\Log\MiniLog.h" />
     <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TesseractOCR.h" />
     <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TextMatchTesseractOCR.h" />
@@ -40,19 +41,21 @@
     <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TextRecognition.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\ARFrameWork\src\AdbController.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\Controller.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\CudaMultiPointsRecognition.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\DeviceController.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\MiniLog.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\MultiPointsRecognition.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\MuMuController.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\MuMuDeviceController.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\TemplateMatchMPR.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\TesseractOCR.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\TextMatchTesseractOCR.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\Controller\AdbController.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\Controller\Controller.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\Controller\MuMuController.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\DeviceController\DeviceController.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\DeviceController\MuMuDeviceController.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\CudaMultiPointsRecognition.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\ImageRecognition.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\MultiPointsRecognition.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\PrefixSumRecognition.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\TemplateMatchMPR.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\TemplateMatchPSR.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\Log\MiniLog.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition\TesseractOCR.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition\TextMatchTesseractOCR.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition\TextRecognition.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

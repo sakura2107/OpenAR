@@ -5,7 +5,7 @@
 
 namespace ar {
 
-	bool multiPointsRecognition(int* res, 
+	bool templateMatchMPR(int* res, 
 		std::string& res_msg,
 		unsigned char* image,
 		unsigned char* temp,

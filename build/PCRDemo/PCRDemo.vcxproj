@@ -148,7 +148,8 @@
       <AdditionalDependencies>ARFrameWork.lib;ARCuda.lib;cudart.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /E /I "$(SolutionDir)res\*" "$(TargetDir)..\res" </Command>
+      <Command>xcopy /Y /E /I "$(SolutionDir)res\*" "$(TargetDir)..\res" 
+xcopy /Y /E /I "$(SolutionDir)TesseractOCRData\*" "$(TargetDir)..\TesseractOCRData" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -172,7 +173,8 @@
       <AdditionalDependencies>ARFrameWork.lib;ARCuda.lib;cudart.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /E /I "$(SolutionDir)res\*" "$(TargetDir)..\res" </Command>
+      <Command>xcopy /Y /E /I "$(SolutionDir)res\*" "$(TargetDir)..\res" 
+xcopy /Y /E /I "$(SolutionDir)TesseractOCRData\*" "$(TargetDir)..\TesseractOCRData" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

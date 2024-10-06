@@ -32,6 +32,8 @@ int main(){
     params.operate_duration = 200;
 
     //Compare image speed
+    pcr::checkImageCompareRate(ar::imageRecognitionType::PSR);
+    pcr::checkImageCompareRate(ar::imageRecognitionType::MPR);
     pcr::checkImageCompareRate(ar::imageRecognitionType::MPR_CUDA);
 
     //task

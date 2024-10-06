@@ -11,6 +11,7 @@ struct point{
 
 enum struct imageRecognitionType{
     MPR,
+    PSR,
     #if defined(ENABLE_CUDA)
     MPR_CUDA,
     #endif

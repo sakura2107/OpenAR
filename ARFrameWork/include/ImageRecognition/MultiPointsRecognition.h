@@ -8,9 +8,9 @@ namespace ar{
 class MultiPointsRecognition : public ImageRecognition{
 public:
     //return a centre point
-    point compareImageReturnCentrePoint(cv::Mat& large_img, cv::Mat& small_img, const float& threshold = 0.95f) override;
+    point compareImageReturnCentrePoint(cv::Mat& image, cv::Mat& temp, const float& threshold = 0.95f) override;
 
-    point compareImageReturnCentrePoint(const std::string& large_img_path, const std::string& small_img_path, const float& threshold = 0.95f) override;
+    point compareImageReturnCentrePoint(const std::string& image_path, const std::string& temp_path, const float& threshold = 0.95f) override;
 
     const unsigned int num_points = 32;
 };
