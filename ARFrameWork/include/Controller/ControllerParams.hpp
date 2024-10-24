@@ -9,8 +9,10 @@ namespace ar {
 	};
 
 	struct controllerParams {
+		//adb
 		std::string adb_path = "";
 		int adb_port = -1;
+		//mumu
 		const wchar_t* mumu_path = L"";
 		int mumu_index = -1;
 	};

@@ -3,8 +3,8 @@
 namespace ar{
 
 struct point{
-    int x = -1;
-    int y = -1;
+    int x = 0;
+    int y = 0;
     unsigned char data = 0;
     bool is_empty = true;
 };
