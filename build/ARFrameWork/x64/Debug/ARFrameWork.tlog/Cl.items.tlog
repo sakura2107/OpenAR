@@ -1,0 +1,14 @@
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\Controller\AdbController.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\AdbController.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\Controller\Controller.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\Controller.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\Controller\MuMuController.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\MuMuController.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\Data\ARData.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\ARData.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\Data\ARJson.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\ARJson.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\DeviceController\DeviceController.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\DeviceController.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\DeviceController\MuMuDeviceController.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\MuMuDeviceController.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\ImageRecognition\CudaMultiPointsRecognition.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\CudaMultiPointsRecognition.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\ImageRecognition\ImageRecognition.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\ImageRecognition.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\ImageRecognition\MultiPointsRecognition.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\MultiPointsRecognition.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\ImageRecognition\PrefixSumRecognition.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\PrefixSumRecognition.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\ImageRecognition\TemplateMatchMPR.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\TemplateMatchMPR.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\ImageRecognition\TemplateMatchPSR.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\TemplateMatchPSR.obj
+C:\Users\cjp\Desktop\OpenAR\ARFrameWork\src\Log\MiniLog.cpp;C:\Users\cjp\Desktop\OpenAR\build\ARFrameWork\x64\Debug\MiniLog.obj

@@ -1,0 +1,6 @@
+﻿  Compiling CUDA source file ..\..\ARCuda\src\TemplateMatchMPRCuda.cu...
+  
+  C:\Users\caiji\Desktop\OpenAR\build\ARCuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"D:\vcpkg-2024.08.23\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FdC:\Users\caiji\Desktop\OpenAR\build\ARCuda\Debug\ARCuda.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\caiji\Desktop\OpenAR\build\ARCuda\x64\Debug\TemplateMatchMPRCuda.cu.obj "C:\Users\caiji\Desktop\OpenAR\ARCuda\src\TemplateMatchMPRCuda.cu" 
+  TemplateMatchMPRCuda.cu
+C:\Users\caiji\Desktop\OpenAR\ARCuda\src\TemplateMatchMPRCuda.cu(253): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  ARCuda.vcxproj -> C:\Users\caiji\Desktop\OpenAR\build\ARCuda\Debug\ARCuda.lib

@@ -1,0 +1,53 @@
+﻿  正在扫描源以查找模块依赖项...
+  ARProjectExplorer.h
+  正在编译...
+  ARProjectExplorer.h
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx11.cpp
+  imgui_impl_win32.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  ARCodeEditor.cpp
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(122,39): warning C4244: “参数”: 从“const _Ty”转换到“float”，可能丢失数据
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(122,39): warning C4244:         with
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(122,39): warning C4244:         [
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(122,39): warning C4244:             _Ty=int
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(122,39): warning C4244:         ]
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(126,35): warning C4244: “参数”: 从“const _Ty”转换到“float”，可能丢失数据
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(126,35): warning C4244:         with
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(126,35): warning C4244:         [
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(126,35): warning C4244:             _Ty=int
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(126,35): warning C4244:         ]
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(131,35): warning C4244: “参数”: 从“const _Ty”转换到“float”，可能丢失数据
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(131,35): warning C4244:         with
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(131,35): warning C4244:         [
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(131,35): warning C4244:             _Ty=int
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(131,35): warning C4244:         ]
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(173,34): warning C4244: “参数”: 从“const _Ty”转换到“float”，可能丢失数据
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(173,34): warning C4244:         with
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(173,34): warning C4244:         [
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(173,34): warning C4244:             _Ty=int
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(173,34): warning C4244:         ]
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(176,34): warning C4244: “参数”: 从“const _Ty”转换到“float”，可能丢失数据
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(176,34): warning C4244:         with
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(176,34): warning C4244:         [
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(176,34): warning C4244:             _Ty=int
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp(176,34): warning C4244:         ]
+  ARProjectExplorer.cpp
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARProjectExplorer.cpp(24,36): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARProjectExplorer.cpp(24,17): warning C4244: “初始化”: 从“float”转换到“const int”，可能丢失数据
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARProjectExplorer.cpp(26,33): warning C4244: “参数”: 从“const int”转换到“float”，可能丢失数据
+  ARToolBar.cpp
+  main.cpp
+  ARMainWindow.cpp
+  ARMenuBar.cpp
+  ARWindowsManager.cpp
+  正在生成代码
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 2058 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  ARStudio.vcxproj -> C:\Users\caiji\Desktop\OpenAR\x64\Release\ARStudio.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。

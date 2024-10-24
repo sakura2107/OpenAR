@@ -24,6 +24,8 @@
     <ClInclude Include="..\..\ARFrameWork\include\Controller\Controller.h" />
     <ClInclude Include="..\..\ARFrameWork\include\Controller\ControllerParams.hpp" />
     <ClInclude Include="..\..\ARFrameWork\include\Controller\MuMuController.h" />
+    <ClInclude Include="..\..\ARFrameWork\include\Data\ARData.h" />
+    <ClInclude Include="..\..\ARFrameWork\include\Data\ARJson.h" />
     <ClInclude Include="..\..\ARFrameWork\include\DeviceController\DeviceController.h" />
     <ClInclude Include="..\..\ARFrameWork\include\DeviceController\DeviceParams.hpp" />
     <ClInclude Include="..\..\ARFrameWork\include\DeviceController\MuMuDeviceController.h" />
@@ -35,15 +37,13 @@
     <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchMPR.h" />
     <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchPSR.h" />
     <ClInclude Include="..\..\ARFrameWork\include\Log\MiniLog.h" />
-    <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TesseractOCR.h" />
-    <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TextMatchTesseractOCR.h" />
-    <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TextParams.hpp" />
-    <ClInclude Include="..\..\ARFrameWork\include\TextRecognition\TextRecognition.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\ARFrameWork\src\Controller\AdbController.cpp" />
     <ClCompile Include="..\..\ARFrameWork\src\Controller\Controller.cpp" />
     <ClCompile Include="..\..\ARFrameWork\src\Controller\MuMuController.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\Data\ARData.cpp" />
+    <ClCompile Include="..\..\ARFrameWork\src\Data\ARJson.cpp" />
     <ClCompile Include="..\..\ARFrameWork\src\DeviceController\DeviceController.cpp" />
     <ClCompile Include="..\..\ARFrameWork\src\DeviceController\MuMuDeviceController.cpp" />
     <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\CudaMultiPointsRecognition.cpp" />
@@ -53,9 +53,6 @@
     <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\TemplateMatchMPR.cpp" />
     <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\TemplateMatchPSR.cpp" />
     <ClCompile Include="..\..\ARFrameWork\src\Log\MiniLog.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition\TesseractOCR.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition\TextMatchTesseractOCR.cpp" />
-    <ClCompile Include="..\..\ARFrameWork\src\TextRecognition\TextRecognition.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -151,7 +148,6 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)ARFrameWork\include;$(SolutionDir)ARCuda\include;$(SolutionDir)3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>-DENABLE_CUDA=ON %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -168,7 +164,6 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)ARFrameWork\include;$(SolutionDir)ARCuda\include;$(SolutionDir)3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>-DENABLE_CUDA=ON %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

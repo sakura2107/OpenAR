@@ -139,13 +139,12 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)PCRDemo\include;$(SolutionDir)ARFrameWork\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>-DENABLE_CUDA=ON %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)build\ARFrameWork\$(Configuration);$(SolutionDir)build\ARCuda\$(Configuration);$(CUDA_PATH)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ARFrameWork.lib;ARCuda.lib;cudart.lib</AdditionalDependencies>
+      <AdditionalDependencies>ARFrameWork.lib;cudart.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /Y /E /I "$(SolutionDir)res\*" "$(TargetDir)..\res" 
@@ -162,7 +161,6 @@ xcopy /Y /E /I "$(SolutionDir)TesseractOCRData\*" "$(TargetDir)..\TesseractOCRDa
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)PCRDemo\include;$(SolutionDir)ARFrameWork\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>-DENABLE_CUDA=ON %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -170,7 +168,7 @@ xcopy /Y /E /I "$(SolutionDir)TesseractOCRData\*" "$(TargetDir)..\TesseractOCRDa
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)build\ARFrameWork\$(Configuration);$(SolutionDir)build\ARCuda\$(Configuration);$(CUDA_PATH)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ARFrameWork.lib;ARCuda.lib;cudart.lib</AdditionalDependencies>
+      <AdditionalDependencies>ARFrameWork.lib;cudart.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /Y /E /I "$(SolutionDir)res\*" "$(TargetDir)..\res" 

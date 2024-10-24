@@ -34,7 +34,6 @@ int main(){
     //Compare image speed
     pcr::checkImageCompareRate(ar::imageRecognitionType::PSR);
     pcr::checkImageCompareRate(ar::imageRecognitionType::MPR);
-    pcr::checkImageCompareRate(ar::imageRecognitionType::MPR_CUDA);
 
     //task
     /*pcr::launchDevice(params);

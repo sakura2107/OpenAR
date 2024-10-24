@@ -1,0 +1,15 @@
+C:\Users\caiji\Desktop\OpenAR\3rdparty\src\imgui\imgui.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\imgui.obj
+C:\Users\caiji\Desktop\OpenAR\3rdparty\src\imgui\imgui_demo.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\imgui_demo.obj
+C:\Users\caiji\Desktop\OpenAR\3rdparty\src\imgui\imgui_draw.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\imgui_draw.obj
+C:\Users\caiji\Desktop\OpenAR\3rdparty\src\imgui\imgui_impl_dx11.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\imgui_impl_dx11.obj
+C:\Users\caiji\Desktop\OpenAR\3rdparty\src\imgui\imgui_impl_win32.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\imgui_impl_win32.obj
+C:\Users\caiji\Desktop\OpenAR\3rdparty\src\imgui\imgui_tables.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\imgui_tables.obj
+C:\Users\caiji\Desktop\OpenAR\3rdparty\src\imgui\imgui_widgets.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\imgui_widgets.obj
+C:\Users\caiji\Desktop\OpenAR\ARStudio\include\ARProjectExplorer.h;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\ARProjectExplorer.h.obj
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARCodeEditor.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\ARCodeEditor.obj
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARProjectExplorer.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\ARProjectExplorer.obj
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARToolBar.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\ARToolBar.obj
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\main.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\main.obj
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARMainWindow.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\ARMainWindow.obj
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARMenuBar.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\ARMenuBar.obj
+C:\Users\caiji\Desktop\OpenAR\ARStudio\src\ARWindowsManager.cpp;C:\Users\caiji\Desktop\OpenAR\build\ARStudio\x64\Release\ARWindowsManager.obj

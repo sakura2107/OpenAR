@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\ARProjectExplorer.h.obj",
+            "outputs": [
+                "C:\\Users\\caiji\\Desktop\\OpenAR\\build\\ARStudio\\x64\\Release\\vc143.pdb",
+                "x64\\Release\\",
+                "C:\\Users\\caiji\\Desktop\\OpenAR\\build\\ARStudio\\x64\\Release\\ARProjectExplorer.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "..\\..\\ARStudio\\include\\ARProjectExplorer.h",
+                    "source-path": "c:\\users\\caiji\\desktop\\openar\\arstudio\\include\\arprojectexplorer.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
