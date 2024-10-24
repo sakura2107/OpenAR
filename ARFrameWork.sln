@@ -15,6 +15,17 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCRDemo", "build\PCRDemo\PC
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ARCuda", "build\ARCuda\ARCuda.vcxproj", "{373D8B35-4E52-4A4B-A26B-417E8EC25ACF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ARStudio", "build\ARStudio\ARStudio.vcxproj", "{1692831E-C28B-4679-AB75-0E5123E3BC89}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4B338077-26F0-4164-AF33-C99A16BFD6AB} = {4B338077-26F0-4164-AF33-C99A16BFD6AB}
+		{4C81DD42-53EF-49A4-BAC8-C5B652626DFD} = {4C81DD42-53EF-49A4-BAC8-C5B652626DFD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ARLauncher", "build\ARLauncher\ARLauncher.vcxproj", "{4B338077-26F0-4164-AF33-C99A16BFD6AB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4C81DD42-53EF-49A4-BAC8-C5B652626DFD} = {4C81DD42-53EF-49A4-BAC8-C5B652626DFD}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -47,6 +58,22 @@ Global
 		{373D8B35-4E52-4A4B-A26B-417E8EC25ACF}.Release|x64.Build.0 = Release|x64
 		{373D8B35-4E52-4A4B-A26B-417E8EC25ACF}.Release|x86.ActiveCfg = Release|x64
 		{373D8B35-4E52-4A4B-A26B-417E8EC25ACF}.Release|x86.Build.0 = Release|x64
+		{1692831E-C28B-4679-AB75-0E5123E3BC89}.Debug|x64.ActiveCfg = Debug|x64
+		{1692831E-C28B-4679-AB75-0E5123E3BC89}.Debug|x64.Build.0 = Debug|x64
+		{1692831E-C28B-4679-AB75-0E5123E3BC89}.Debug|x86.ActiveCfg = Debug|Win32
+		{1692831E-C28B-4679-AB75-0E5123E3BC89}.Debug|x86.Build.0 = Debug|Win32
+		{1692831E-C28B-4679-AB75-0E5123E3BC89}.Release|x64.ActiveCfg = Release|x64
+		{1692831E-C28B-4679-AB75-0E5123E3BC89}.Release|x64.Build.0 = Release|x64
+		{1692831E-C28B-4679-AB75-0E5123E3BC89}.Release|x86.ActiveCfg = Release|Win32
+		{1692831E-C28B-4679-AB75-0E5123E3BC89}.Release|x86.Build.0 = Release|Win32
+		{4B338077-26F0-4164-AF33-C99A16BFD6AB}.Debug|x64.ActiveCfg = Debug|x64
+		{4B338077-26F0-4164-AF33-C99A16BFD6AB}.Debug|x64.Build.0 = Debug|x64
+		{4B338077-26F0-4164-AF33-C99A16BFD6AB}.Debug|x86.ActiveCfg = Debug|Win32
+		{4B338077-26F0-4164-AF33-C99A16BFD6AB}.Debug|x86.Build.0 = Debug|Win32
+		{4B338077-26F0-4164-AF33-C99A16BFD6AB}.Release|x64.ActiveCfg = Release|x64
+		{4B338077-26F0-4164-AF33-C99A16BFD6AB}.Release|x64.Build.0 = Release|x64
+		{4B338077-26F0-4164-AF33-C99A16BFD6AB}.Release|x86.ActiveCfg = Release|Win32
+		{4B338077-26F0-4164-AF33-C99A16BFD6AB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
