@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{d836a6a8-6325-4c46-9075-267f2162e8c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{91f8b0b3-80d8-496c-ab8d-4175373b530b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ARLauncher\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARLauncher\src\ARLGlobalParams.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARLauncher\src\ARLTaskNode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ARLauncher\src\ARLPipline.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ARLauncher\include\ARLGlobalParams.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARLauncher\include\ARLTaskPipline.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ARLauncher\include\ARLTaskNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
