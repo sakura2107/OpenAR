@@ -120,8 +120,7 @@
       <AdditionalDependencies>ARFrameWork.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /E /I "$(SolutionDir)res\*" "$(TargetDir)..\res" 
-xcopy /Y /E /I "$(SolutionDir)TesseractOCRData\*" "$(TargetDir)..\TesseractOCRData" </Command>
+      <Command>xcopy /Y /E /I "$(SolutionDir)res\*" "$(TargetDir)..\res" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -144,8 +143,7 @@ xcopy /Y /E /I "$(SolutionDir)TesseractOCRData\*" "$(TargetDir)..\TesseractOCRDa
       <AdditionalDependencies>ARFrameWork.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /E /I "$(SolutionDir)res\*" "$(TargetDir)..\res" 
-xcopy /Y /E /I "$(SolutionDir)TesseractOCRData\*" "$(TargetDir)..\TesseractOCRData" </Command>
+      <Command>xcopy /Y /E /I "$(SolutionDir)res\*" "$(TargetDir)..\res" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
