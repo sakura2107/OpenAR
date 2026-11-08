@@ -1,0 +1,52 @@
+{
+  "repo": "PaddlePaddle/chinese_cht_PP-OCRv3_mobile_rec",
+  "revision": "ab3009d849dea4d7296aabce47acff1ab124ebff",
+  "license": "Apache-2.0",
+  "source": "https://huggingface.co/PaddlePaddle/chinese_cht_PP-OCRv3_mobile_rec/tree/ab3009d849dea4d7296aabce47acff1ab124ebff",
+  "files": {
+    "config.json": "58878ed9512149c8a37d0631d36c6abc4a43eaae50b95e5adc8b0e3c5be8a07b",
+    "conversion.log": "73d1cf11f39efe32fe7801f92b9a8a6c4e4ae9e16e6bd1fa934752b58419c0fc",
+    "inference.json": "c41c0664f0d7e344dcf022953df17280f3e0f951a6473586cd740e1e0b70b8d4",
+    "inference.pdiparams": "53cdd14ef365d43a3de5357dea00935c56ae6d8f0f7d464b8aee187df8bdea47",
+    "inference.yml": "439e1a9905cfbbd9550a65e01ea7eddd424a45b9584c26a2880808a0c011268c",
+    "README.md": "6dfa4dbb40f2b250002dc0120cbab82ca3a1e40c8ff5c9e520c881a8b36a9a5e"
+  },
+  "conversion": {
+    "paddlepaddle": "3.1.1",
+    "paddle2onnx": "2.1.0",
+    "onnx": "1.17.0",
+    "opset_requested": 17,
+    "command": [
+      "python",
+      "-m",
+      "paddle2onnx.command",
+      "--model_dir",
+      "C:\\Users\\caiji\\Documents\\Codex\\2026-11-01\\b1-openar-ocr-gpt-codex-ba\\work\\model-research\\official\\chinese_cht_PP-OCRv3_mobile_rec",
+      "--model_filename",
+      "inference.json",
+      "--params_filename",
+      "inference.pdiparams",
+      "--save_file",
+      "D:\\OpenAR-main\\models\\official\\chinese_cht_PP-OCRv3_mobile_rec.onnx",
+      "--opset_version",
+      "17",
+      "--enable_onnx_checker",
+      "True",
+      "--optimize_tool",
+      "None"
+    ],
+    "modified": "Paddle PIR graph converted to ONNX; weights retained",
+    "onnx_sha256": "ab0aa3258af94e97c34d099e3488d8644f092b326ceff53c71418076e6174419",
+    "actual_opsets": [
+      {
+        "domain": "",
+        "version": 17
+      }
+    ]
+  },
+  "dictionary": {
+    "source": "official inference.yml PostProcess.character_dict, order preserved",
+    "rows": 8421,
+    "sha256": "832551fee1f2fbc97508772d81ebdc8dba12c00de97a35c71c9ddf43ddac1a83"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "backend": "adb",
+  "device_id": "YOUR_ADB_SERIAL",
+  "serial": "YOUR_ADB_SERIAL",
+  "command_timeout_ms": 5000,
+  "rotation": 0
+}

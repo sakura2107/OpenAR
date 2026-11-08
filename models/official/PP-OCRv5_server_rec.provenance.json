@@ -1,0 +1,51 @@
+{
+  "repo": "PaddlePaddle/PP-OCRv5_server_rec",
+  "revision": "b26c3587fda8da3c8ec0ce357214b4d661ff1558",
+  "license": "Apache-2.0",
+  "source": "https://huggingface.co/PaddlePaddle/PP-OCRv5_server_rec/tree/b26c3587fda8da3c8ec0ce357214b4d661ff1558",
+  "files": {
+    "config.json": "6a780e213d7a830058ae1b6899c62cc13ca9c1f0f04ae39a27ebb2610fae7c51",
+    "inference.json": "8e6e12e5d42531840310977fffb58165bf889fc5061408c5a8afdb6985f47fcb",
+    "inference.pdiparams": "63853f062a5f4089befc16f565a68277618e0da5cb45468b49d11079de0ada77",
+    "inference.yml": "2c719dba044c4e2228aef8ff92f5f575394d75d24c16de096a33b7cfd902f66d",
+    "README.md": "519eba1704ddeb8d3e68c4f54221dde11074be0644197cdc4d5581b6d74bd62c"
+  },
+  "conversion": {
+    "paddlepaddle": "3.1.1",
+    "paddle2onnx": "2.1.0",
+    "onnx": "1.17.0",
+    "opset_requested": 17,
+    "command": [
+      "python",
+      "-m",
+      "paddle2onnx.command",
+      "--model_dir",
+      "C:\\Users\\caiji\\Documents\\Codex\\2026-11-01\\b1-openar-ocr-gpt-codex-ba\\work\\model-research\\official\\PP-OCRv5_server_rec",
+      "--model_filename",
+      "inference.json",
+      "--params_filename",
+      "inference.pdiparams",
+      "--save_file",
+      "D:\\OpenAR-main\\models\\official\\PP-OCRv5_server_rec.onnx",
+      "--opset_version",
+      "17",
+      "--enable_onnx_checker",
+      "True",
+      "--optimize_tool",
+      "None"
+    ],
+    "modified": "Paddle PIR graph converted to ONNX; weights retained",
+    "onnx_sha256": "00667becb28bcd49dfbcb8c7724aa8d6e8f01a1444db66e404182431e0fcbc14",
+    "actual_opsets": [
+      {
+        "domain": "",
+        "version": 17
+      }
+    ]
+  },
+  "dictionary": {
+    "source": "official inference.yml PostProcess.character_dict, order preserved",
+    "rows": 18383,
+    "sha256": "d1979e9f794c464c0d2e0b70a7fe14dd978e9dc644c0e71f14158cdf8342af1b"
+  }
+}

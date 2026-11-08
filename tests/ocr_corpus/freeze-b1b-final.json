@@ -1,0 +1,19 @@
+{
+  "frozen_at": "2026-11-01T15:02:04.967410+00:00",
+  "dataset_role": "old test = regression only; fresh acceptance not captured",
+  "selection": "Tune: ja primary v3 + low-confidence v5 fallback29/29, lower observed tail than English fallback; zh primary v5 + v3 fallback only on empty result51/51, whereas replacing all <.85 results with v3 reduced tune to49/51. Primary outputs never repaired by text substitution.",
+  "files": {
+    "models/ocr/ja-b1b-v2.json": "0419f1d236fb0bc226930f91221a926f714ebd719ba5c8620a8d15c609a7c13f",
+    "models/ocr/zh-Hant-b1b-v2.json": "44003d7a1647c897f92691e109c84b2f205f10059a1c22fa936e938ede80aabe",
+    "tests/ocr_corpus/annotations-b1b-v4.jsonl": "bc255b17b0d6b705f08503e28e475ae39e2f0a185d3b004957d90565bd138db1",
+    "scripts/ocr_report.py": "afe5994f4594aefc17c1ccf1a549be278036ff4124e36087b36cd99d79966376",
+    "models/official/PP-OCRv5_mobile_rec.onnx": "bcb195e3463eb9e46ef419b8a01ea4729577de5fd63c64f0a762e43bd64256e7",
+    "models/official/PP-OCRv5_mobile_rec.txt": "d1979e9f794c464c0d2e0b70a7fe14dd978e9dc644c0e71f14158cdf8342af1b",
+    "models/official/japan_PP-OCRv3_mobile_rec.onnx": "7bf1bba295f6a289ebab6ade35d9a8a92acdcc9843c8da72640f463f373c1558",
+    "models/official/japan_PP-OCRv3_mobile_rec.txt": "1dcfcb41eec90576a945b3084f22ade11ced506e24f14879245b071698f308e8",
+    "out/cpu/Release/plugins/OcrPaddleCpu.dll": "e9ca9d20f57b774494da235688e4bd871b2f534e1065d75cae75eb9c066088a1",
+    "out/gpu/Release/plugins/OcrPaddleGpu.dll": "b6643a865ac4966db3fb7d95d6879b02bd734de4568a617735ba4953e312569b",
+    "out/ocr-audit/b1b-tune/ja-v5-ja.json": "c9d9dbe8f528b2f3cb9f78e6ca6e8e572034aeb1c7a97ed929b55932ce91cd2b",
+    "out/ocr-audit/b1b-tune/v5-ja-empty-zh-Hant.json": "daa3be3f16496d35b142bf73ad943f40a220a26b369e7b1374aedfb04773fea5"
+  }
+}

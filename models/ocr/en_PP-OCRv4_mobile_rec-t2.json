@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "en_PP-OCRv4_mobile_rec-t2",
+  "language": "ja",
+  "status": "candidate",
+  "detector": {
+    "model": "../official/PP-OCRv5_mobile_det.onnx",
+    "channel_order": "BGR",
+    "normalization_order": "after_channel_order",
+    "scale": 0.00392156862745098,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "limit_type": "max",
+    "limit_side_len": 960,
+    "resize_rounding": "nearest",
+    "bitmap_threshold": 0.3,
+    "box_threshold": 0.6,
+    "unclip_ratio": 1.5,
+    "score_mode": "fast",
+    "line_merge_ratio": 0
+  },
+  "recognizer": {
+    "model": "../official/en_PP-OCRv4_mobile_rec.onnx",
+    "dictionary": "../official/en_PP-OCRv4_mobile_rec.txt",
+    "input_height": "model",
+    "dynamic_height": null,
+    "minimum_width": 320,
+    "maximum_width": 2048,
+    "width_multiple": 1,
+    "max_batch_size": 8,
+    "channel_order": "BGR",
+    "normalization_order": "after_channel_order",
+    "scale": 0.00392156862745098,
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "alignment": "left",
+    "padding_stage": "normalized",
+    "padding_value": 0,
+    "blank_index": 0,
+    "use_space_char": true,
+    "confidence_mode": "sequence_mean",
+    "text_threshold": 0.5
+  },
+  "numbers": {
+    "allowed_characters": "0123456789,/xX\u00d7.:%+- ",
+    "minimum_width": 64
+  },
+  "runtime": {
+    "intra_op_threads": 2,
+    "graph_optimization": "all"
+  }
+}

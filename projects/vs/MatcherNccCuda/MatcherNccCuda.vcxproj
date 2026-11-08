@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<ItemGroup Label="ProjectConfigurations"><ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration><ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration></ItemGroup>
+<PropertyGroup Label="Globals"><ProjectGuid>{334235A1-6441-549C-BEB1-94BC7B84763F}</ProjectGuid><Keyword>Win32Proj</Keyword><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+<PropertyGroup Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><PlatformToolset>v143</PlatformToolset><CharacterSet>Unicode</CharacterSet><UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries></PropertyGroup>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+<Import Project="..\OpenAR.Common.props" />
+<Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA $(OpenARCudaVersion).props" />
+<PropertyGroup><OutDir>$(OpenAROutput)plugins\</OutDir><IntDir>$(OpenARRoot)out\obj\$(OpenARProfile)\$(Configuration)\MatcherNccCuda\</IntDir></PropertyGroup>
+<ItemDefinitionGroup><CudaCompile><CudaRuntime>Shared</CudaRuntime><AdditionalOptions>--std=c++17 %(AdditionalOptions)</AdditionalOptions><Include>$(OpenARRoot)ar\include;$(OpenARRoot)plugins\common\cuda;%(Include)</Include><CompileOut>$(IntDir)%(Filename).cu.obj</CompileOut><KeepDir>$(IntDir)</KeepDir></CudaCompile><Link><AdditionalLibraryDirectories>$(CUDA_PATH)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><AdditionalDependencies>cudart.lib;%(AdditionalDependencies)</AdditionalDependencies></Link></ItemDefinitionGroup>
+<ItemGroup><ClCompile Include="$(OpenARRoot)plugins\matcher\ncc_cuda\NccMatcher.cpp" /><ClCompile Include="$(OpenARRoot)plugins\matcher\ncc_cuda\PluginExports.cpp" /><CudaCompile Include="$(OpenARRoot)plugins\matcher\ncc_cuda\NccPipeline.cu" /><CudaCompile Include="$(OpenARRoot)plugins\common\cuda\CudaImageOps.cu" /></ItemGroup><ItemGroup></ItemGroup>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+<Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA $(OpenARCudaVersion).targets" />
+</Project>

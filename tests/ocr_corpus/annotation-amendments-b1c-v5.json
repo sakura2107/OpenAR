@@ -1,0 +1,99 @@
+{
+  "source_sha256": "bc255b17b0d6b705f08503e28e475ae39e2f0a185d3b004957d90565bd138db1",
+  "amended_sha256": "68d27e955bce5a33326639cc4782341f33324d9f57184f4283e0b829e04257c1",
+  "created_at": "2026-11-01T15:31:58.943927+00:00",
+  "texts_changed": 0,
+  "changes": [
+    {
+      "id": "ja-3787a2c46851-region-009",
+      "text": "チエ",
+      "old_box": [
+        586,
+        336,
+        20,
+        10
+      ],
+      "new_box": [
+        582,
+        331,
+        31,
+        20
+      ],
+      "reason": "Claude flagged boundary; Codex visually reviewed surrounding old screenshot, include complete glyphs and exclude following parenthesis."
+    },
+    {
+      "id": "ja-3787a2c46851-region-011",
+      "text": "ノゾミ",
+      "old_box": [
+        793,
+        333,
+        31,
+        16
+      ],
+      "new_box": [
+        788,
+        330,
+        40,
+        22
+      ],
+      "reason": "Claude flagged boundary; Codex visually reviewed surrounding old screenshot, include complete glyphs and exclude following parenthesis."
+    },
+    {
+      "id": "ja-3787a2c46851-region-017",
+      "text": "ミノリ",
+      "old_box": [
+        897,
+        419,
+        32,
+        15
+      ],
+      "new_box": [
+        893,
+        416,
+        41,
+        21
+      ],
+      "reason": "Claude flagged boundary; Codex visually reviewed surrounding old screenshot, include complete glyphs and exclude following parenthesis."
+    },
+    {
+      "id": "zh-Hant-07d956c68c82-region-016",
+      "text": "任務目標",
+      "old_box": [
+        370,
+        311,
+        99,
+        30
+      ],
+      "new_box": [
+        368,
+        310,
+        93,
+        32
+      ],
+      "reason": "Claude flagged boundary; Codex visually reviewed surrounding old screenshot, include complete glyphs and exclude following parenthesis."
+    },
+    {
+      "id": "ja-71cf03580ffe-region-029-supplement3",
+      "text": "一括掃討",
+      "old_box": [
+        505,
+        571,
+        71,
+        29
+      ],
+      "new_box": [
+        495,
+        569,
+        84,
+        33
+      ],
+      "reason": "Claude flagged boundary; Codex visually reviewed surrounding old screenshot, include complete glyphs and exclude following parenthesis."
+    }
+  ],
+  "new_box_audit": {
+    "id": "zh-Hant-209d92a15c5c-region-006",
+    "audited_by": "Claude（新框）",
+    "audited_at": "2026-11-01T15:31:58.943927+00:00",
+    "timestamp_basis": "Acknowledgement/import time of user supplied B1c review. Original visual-review time was not supplied."
+  }
+}

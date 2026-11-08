@@ -1,0 +1,81 @@
+{
+  "version": "b1c-accept-v2",
+  "updated_at": "2026-11-01T17:09:13.528113+00:00",
+  "stage": "Claude audit amendments BEFORE first frozen acceptance inference",
+  "source": "C:\\Users\\caiji\\Desktop\\交接\\BA自动化\\B1c-Claude抽查表.csv",
+  "source_sha256": "12d958058c9f9af52965b11daf8be4fba5aecebbb1824c0fd7d4b25759ff4de2",
+  "source_index_note": "CSV index is zero-based; locate records by id, not displayed row number.",
+  "audit_decisions": {
+    "agree": 18,
+    "roi-fix": 1,
+    "text-ok-meta-fix": 1
+  },
+  "before_annotations_sha256": "508904d79e39c7c426f7d1bfd4d35b16eb93c7ff9659965f345bd26e6eb13d90",
+  "authoritative_annotations": "annotations-b1c-accept-v2.jsonl",
+  "authoritative_sha256": "e3d7dc6f55d95a10579705dee237c2c605768ed128a0ba63665f1cfffc839b87",
+  "frozen_execution_annotations": "annotations-b1c-accept-v2-frozen-schema.jsonl",
+  "frozen_execution_sha256": "93d9185cffdc74acd23a2070d1550e533b96e59d45735e81120972bbd256006e",
+  "texts_changed": 0,
+  "changes": [
+    {
+      "id": "zh-Hant-accept-b1c-d08a61dd42c9-002",
+      "field": "box",
+      "before": [
+        31,
+        253,
+        39,
+        27
+      ],
+      "after": [
+        31,
+        253,
+        36,
+        27
+      ],
+      "reason": "Claude exact ROI amendment excludes red notification badge; truth 任務 unchanged."
+    },
+    {
+      "id": "zh-Hant-accept-b1c-4fd2764fb2c5-085",
+      "field": "number_form",
+      "before": "integer",
+      "after": "percent",
+      "reason": "Claude semantic metadata correction; truth 742% unchanged.",
+      "box_retained": [
+        586,
+        233,
+        45,
+        22
+      ],
+      "box_note": "Existing crop contains complete 742% and excludes neighboring 力/的; optional expansion not applied."
+    }
+  ],
+  "compatibility_mapping": {
+    "id": "zh-Hant-accept-b1c-4fd2764fb2c5-085",
+    "field": "number_form",
+    "authoritative": "percent",
+    "legacy_view": "integer",
+    "reason": "Frozen schema lacks percent enum. Metadata-only execution view; identical text/ROI/images/audits. Model and semantic scorer do not use number_form."
+  },
+  "parser_check": {
+    "spaced": "4830 / 4830",
+    "compact": "4830/4830",
+    "parsed": [
+      "fraction",
+      "4.83E+3",
+      "4.83E+3"
+    ],
+    "equal": true,
+    "percent": [
+      "percent",
+      "742"
+    ]
+  },
+  "freeze_manifest_sha256": "c5983e9dc78db268c192039f0e36126ef7a51dc9cbd5d23f8595b2eecc8058ba",
+  "freeze_assets_verified": 35,
+  "coverage_accepted_by_user": [
+    "both languages arena-results",
+    "zh-Hant daily-reward",
+    "zh-Hant ranking numbers"
+  ],
+  "inference_status": "NOT RUN at revision creation"
+}

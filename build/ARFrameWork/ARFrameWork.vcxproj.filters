@@ -1,144 +1,129 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClInclude Include="..\..\ar\include\control\AdbClient.hpp">
+      <Filter>include\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\core\Cmd.hpp">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\log\ConsoleLogger.h">
+      <Filter>include\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\control\Controller.h">
+      <Filter>include\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\vision\Detector.h">
+      <Filter>include\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\device\DeviceController.h">
+      <Filter>include\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\net\Http.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\core\INoCopy.hpp">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\log\Logger.h">
+      <Filter>include\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\vision\Matcher.h">
+      <Filter>include\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\vision\Ocr.h">
+      <Filter>include\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\core\Path.hpp">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\plugin\PluginApi.h">
+      <Filter>include\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\plugin\PluginLoader.h">
+      <Filter>include\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\net\ProxyClient.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\core\Registry.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\core\Str.hpp">
+      <Filter>include\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ar\src\control\Controller.cpp">
+      <Filter>src\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ar\src\log\ConsoleLogger.cpp">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ar\src\device\DeviceController.cpp">
+      <Filter>src\device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ar\src\app\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ar\src\vision\Matcher.cpp">
+      <Filter>src\vision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ar\src\vision\Ocr.cpp">
+      <Filter>src\vision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ar\src\plugin\PluginLoader.cpp">
+      <Filter>src\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ar\src\net\ProxyClient.cpp">
+      <Filter>src\net</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <Filter Include="include">
-      <UniqueIdentifier>{909e361c-6ab3-4af3-bb24-343d17525fe6}</UniqueIdentifier>
+      <UniqueIdentifier>{fb4d992d-edd3-432b-8a3c-9a7c7554f162}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{b787aab7-2522-4998-8505-fd738cd9d5ee}</UniqueIdentifier>
+      <UniqueIdentifier>{4b53e027-fa41-4c4d-abd9-5b95c00615c3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Cmd">
-      <UniqueIdentifier>{8c924a33-3c04-4ec7-9b49-d003bbe49f3c}</UniqueIdentifier>
+    <Filter Include="include\core">
+      <UniqueIdentifier>{4aeb3994-6768-45ce-bf25-953b12529b66}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\ImageRecognition">
-      <UniqueIdentifier>{d3456f6d-e5b4-40c4-9e2b-ea766ac5ad87}</UniqueIdentifier>
+    <Filter Include="include\device">
+      <UniqueIdentifier>{a3960717-b123-4275-beb0-019f8eacb1a9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Controller">
-      <UniqueIdentifier>{9b57d413-e5da-488b-bf47-9603af1280f5}</UniqueIdentifier>
+    <Filter Include="include\log">
+      <UniqueIdentifier>{1d62cc8a-a963-41b3-80b1-65040b32774c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\DeviceController">
-      <UniqueIdentifier>{6f672400-7b4e-4f8a-87fa-c7ba9a9c1a36}</UniqueIdentifier>
+    <Filter Include="include\net">
+      <UniqueIdentifier>{d28f5b6c-b9ed-42ed-82c4-ca3813d22077}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Log">
-      <UniqueIdentifier>{b187a313-298f-47b3-966c-3e014396543a}</UniqueIdentifier>
+    <Filter Include="include\plugin">
+      <UniqueIdentifier>{6652044e-3a9f-4d5d-a7f8-e024738cb14f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Controller">
-      <UniqueIdentifier>{5bb3e11f-28c3-41be-a810-d1a9a8e6d15c}</UniqueIdentifier>
+    <Filter Include="include\vision">
+      <UniqueIdentifier>{2b2f93a3-e7fa-47de-9c43-0e3ad7a729d6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\DeviceController">
-      <UniqueIdentifier>{6a9e930c-5f53-4478-8711-773a5ac77764}</UniqueIdentifier>
+    <Filter Include="include\control">
+      <UniqueIdentifier>{80f00f78-7c2e-4a33-85f9-b0c067b63a84}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\ImageRecognition">
-      <UniqueIdentifier>{125b179c-2087-4609-b0ad-08dcf81125f6}</UniqueIdentifier>
+    <Filter Include="src\control">
+      <UniqueIdentifier>{6537d916-9cb2-4e2c-b5e0-1d90be8f86d2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Log">
-      <UniqueIdentifier>{c1571554-7f78-46e8-9833-0fde5b4e42ed}</UniqueIdentifier>
+    <Filter Include="src\device">
+      <UniqueIdentifier>{ed5bf0b7-7f81-4802-89fc-71dada2a04f7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Data">
-      <UniqueIdentifier>{2683a2f3-9905-4174-9d1f-f8fdfd492a85}</UniqueIdentifier>
+    <Filter Include="src\log">
+      <UniqueIdentifier>{54856942-3df9-4eeb-a249-bcd052f4957c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Data">
-      <UniqueIdentifier>{47f11db3-2615-4dd7-b26c-e9dd0228562c}</UniqueIdentifier>
+    <Filter Include="src\net">
+      <UniqueIdentifier>{5deacce3-b059-4ff0-af76-c284debf6513}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\ARFrameWork\include\Cmd\CmdTools.hpp">
-      <Filter>include\Cmd</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\Controller\AdbController.h">
-      <Filter>include\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\Controller\Controller.h">
-      <Filter>include\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\Controller\ControllerParams.hpp">
-      <Filter>include\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\Controller\MuMuController.h">
-      <Filter>include\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\DeviceController\DeviceController.h">
-      <Filter>include\DeviceController</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\DeviceController\DeviceParams.hpp">
-      <Filter>include\DeviceController</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\DeviceController\MuMuDeviceController.h">
-      <Filter>include\DeviceController</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\CudaMultiPointsRecognition.h">
-      <Filter>include\ImageRecognition</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\ImageParams.hpp">
-      <Filter>include\ImageRecognition</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\ImageRecognition.h">
-      <Filter>include\ImageRecognition</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\MultiPointsRecognition.h">
-      <Filter>include\ImageRecognition</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchMPR.h">
-      <Filter>include\ImageRecognition</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\Log\MiniLog.h">
-      <Filter>include\Log</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\PrefixSumRecognition.h">
-      <Filter>include\ImageRecognition</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\ImageRecognition\TemplateMatchPSR.h">
-      <Filter>include\ImageRecognition</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\Data\ARJson.h">
-      <Filter>include\Data</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ARFrameWork\include\Data\ARData.h">
-      <Filter>include\Data</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\ARFrameWork\src\Controller\AdbController.cpp">
-      <Filter>src\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\Controller\Controller.cpp">
-      <Filter>src\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\Controller\MuMuController.cpp">
-      <Filter>src\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\DeviceController\DeviceController.cpp">
-      <Filter>src\DeviceController</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\DeviceController\MuMuDeviceController.cpp">
-      <Filter>src\DeviceController</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\CudaMultiPointsRecognition.cpp">
-      <Filter>src\ImageRecognition</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\ImageRecognition.cpp">
-      <Filter>src\ImageRecognition</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\MultiPointsRecognition.cpp">
-      <Filter>src\ImageRecognition</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\TemplateMatchMPR.cpp">
-      <Filter>src\ImageRecognition</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\Log\MiniLog.cpp">
-      <Filter>src\Log</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\PrefixSumRecognition.cpp">
-      <Filter>src\ImageRecognition</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\ImageRecognition\TemplateMatchPSR.cpp">
-      <Filter>src\ImageRecognition</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\Data\ARJson.cpp">
-      <Filter>src\Data</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ARFrameWork\src\Data\ARData.cpp">
-      <Filter>src\Data</Filter>
-    </ClCompile>
+    <Filter Include="src\vision">
+      <UniqueIdentifier>{75d8c897-b9a7-48e7-a6c5-1c1e92371c6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\plugin">
+      <UniqueIdentifier>{648742b4-f78c-433a-9212-bccde9009ccc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

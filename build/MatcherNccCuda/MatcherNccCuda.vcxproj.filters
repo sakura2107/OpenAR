@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ar\include\plugin">
+      <UniqueIdentifier>{4C8A31E7-95B2-4C1F-A0D6-72E9C8410B53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ar\include\core">
+      <UniqueIdentifier>{2D96B7A4-8F13-4E52-9C60-51B3A7D2E8F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins\matcher\ssim_cuda">
+      <UniqueIdentifier>{E1A05C76-3B47-4D28-9F0B-C6D82E94A715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins\matcher\ncc_cuda">
+      <UniqueIdentifier>{57C9E2B4-16A8-4F3D-8B75-9A3E0C6D1824}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ar\include\plugin\PluginApi.h">
+      <Filter>ar\include\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\core\CudaCheck.hpp">
+      <Filter>ar\include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\matcher\ssim_cuda\CudaImageOps.h">
+      <Filter>plugins\matcher\ssim_cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\matcher\ncc_cuda\NccMatcher.h">
+      <Filter>plugins\matcher\ncc_cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\matcher\ncc_cuda\NccPipeline.h">
+      <Filter>plugins\matcher\ncc_cuda</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\plugins\matcher\ncc_cuda\PluginExports.cpp">
+      <Filter>plugins\matcher\ncc_cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\matcher\ncc_cuda\NccMatcher.cpp">
+      <Filter>plugins\matcher\ncc_cuda</Filter>
+    </ClCompile>
+    <CudaCompile Include="..\..\plugins\matcher\ncc_cuda\NccPipeline.cu">
+      <Filter>plugins\matcher\ncc_cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\plugins\matcher\ssim_cuda\CudaImageOps.cu">
+      <Filter>plugins\matcher\ssim_cuda</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

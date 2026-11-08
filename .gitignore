@@ -30,3 +30,36 @@
 *.exe
 *.out
 *.app
+
+# Local toolchain, generated output and legacy compiler artifacts
+deps.local.props
+out/
+dist/
+*.pdb
+*.exp
+*.tlog
+*.ipdb
+*.iobj
+*.ilk
+*.idb
+*.vcxproj.user
+build/*/Debug/
+build/*/Release/
+__pycache__/
+projects/vs/*/x64/
+device.local.json
+
+# Local IDE cache, scratch work and prebuilt binary dependencies (prepare locally, see README)
+.vs/
+work/
+3rdparty/bin/
+3rdparty/lib/
+build/*/x64/
+
+# OCR corpus screenshots and official ONNX weights stay local
+# (re-download weights with scripts/ocr_prepare_models.py; provenance json is kept)
+tests/ocr_corpus/**/*.png
+models/official/*.onnx
+
+# Local sample screenshots (personal desktop captures), not published
+data/samples/

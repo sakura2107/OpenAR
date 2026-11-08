@@ -1,0 +1,1 @@
+{"schema_version":1,"steps":[{"image":"before.png","expect":{"type":"Click","target":[320,180]},"action_error":"offline"},{"image":"after.png"}]}

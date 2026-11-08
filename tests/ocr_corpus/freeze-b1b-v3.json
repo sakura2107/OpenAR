@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-11-01T15:09:26.057644+00:00",
+  "role": "regression candidate, awaiting new acceptance collection",
+  "selection": "Both use v5 primary; backup only on empty or syntactically invalid result. Japanese backup is v3 (repairs invalid multi-dot thousands output on tune); zh-Hant backup is English v4. No semantic operator is inserted or edited. Tune29/29 and51/51; p50<=5ms and max<=15ms. Prior test has been inspected and is regression only.",
+  "files": {
+    "models/ocr/ja-b1b-v3.json": "feabbdc448fc54e28a20b2dc2dbf81a5658bab986eddb593c211d0f8bb138f8f",
+    "models/ocr/zh-Hant-b1b-v3.json": "638bab94a5cfb099a4d2c671167ee23ebff8094d6d8aaf18228f0cf736a0bce2",
+    "tests/ocr_corpus/annotations-b1b-v4.jsonl": "bc255b17b0d6b705f08503e28e475ae39e2f0a185d3b004957d90565bd138db1",
+    "scripts/ocr_report.py": "afe5994f4594aefc17c1ccf1a549be278036ff4124e36087b36cd99d79966376",
+    "plugins/ocr/paddle_common/OcrConfig.h": "4bcfa41417e5f265fa5a8f18c94bc4137e9bc84706eb7f1dd0b3af57358b7e6a",
+    "plugins/ocr/paddle_common/PaddleEngine.h": "6aa16c654a049444c32adc4e4a0796ffb453ababa2d11007ff423827091239b7",
+    "out/cpu/Release/plugins/OcrPaddleCpu.dll": "37348134e34851b1fa874961732d19d33859b3f3842746f929451443dbb0aa0f",
+    "out/gpu/Release/plugins/OcrPaddleGpu.dll": "fa66e6193a9bb55fe3a469580b9685327a6d423eabc346acf197d0eff8f06452",
+    "models/official/PP-OCRv5_mobile_rec.onnx": "bcb195e3463eb9e46ef419b8a01ea4729577de5fd63c64f0a762e43bd64256e7",
+    "models/official/PP-OCRv5_mobile_rec.txt": "d1979e9f794c464c0d2e0b70a7fe14dd978e9dc644c0e71f14158cdf8342af1b",
+    "models/official/PP-OCRv5_mobile_det.onnx": "c8d9b07063420ce5365c74e42532de48238feeeedcdb7a330b195708bc38a93f",
+    "models/official/japan_PP-OCRv3_mobile_rec.onnx": "7bf1bba295f6a289ebab6ade35d9a8a92acdcc9843c8da72640f463f373c1558",
+    "models/official/japan_PP-OCRv3_mobile_rec.txt": "1dcfcb41eec90576a945b3084f22ade11ced506e24f14879245b071698f308e8",
+    "models/official/en_PP-OCRv4_mobile_rec.onnx": "5634cfafad2909f9fcd9886fe8e526c3480038ead12818598e3c91b3caa13912",
+    "models/official/en_PP-OCRv4_mobile_rec.txt": "5662df9d2d03f0e8ca0d3b0649d6acbab904b6a14b3d3521463c71c37c668ce3",
+    "out/ocr-audit/b1b-v3-tune-ja.json": "75ce82093a3f1793baafd475c94ce7b59c4ed8678d4c6663c4cd55650c85aafa",
+    "out/ocr-audit/b1b-v3-tune-zh-Hant.json": "50ea61097d7bee96004499c834ac0767752883b98634ab90f96452ba4fcb7209"
+  }
+}

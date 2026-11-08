@@ -1,0 +1,194 @@
+{
+  "created_at": "2026-11-01T13:38:48.649042+00:00",
+  "source_sha256": "035bc09170701d61aa77f9633c003e88b6f39dbd109a28a18753dcafc0540f3f",
+  "amended_sha256": "dd1445af8466d1f1a07b70013e03826d1961d2a9eabdce89f0aa6c877c094aa2",
+  "changes": [
+    {
+      "id": "ja-176f0a19cbe3-region-006-manual-18",
+      "old_box": [
+        716,
+        557,
+        20,
+        21
+      ],
+      "new_box": [
+        713,
+        555,
+        27,
+        25
+      ],
+      "text": "70",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    },
+    {
+      "id": "ja-c2ae7f8daa5d-region-040-supplement1",
+      "old_box": [
+        884,
+        675,
+        32,
+        19
+      ],
+      "new_box": [
+        881,
+        672,
+        38,
+        24
+      ],
+      "text": "x20",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    },
+    {
+      "id": "ja-5d98f1a1960b-region-014-supplement3",
+      "old_box": [
+        718,
+        263,
+        20,
+        17
+      ],
+      "new_box": [
+        709,
+        259,
+        33,
+        25
+      ],
+      "text": "x5",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-14",
+      "old_box": [
+        1166,
+        137,
+        9,
+        15
+      ],
+      "new_box": [
+        1169,
+        138,
+        8,
+        12
+      ],
+      "text": "0",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-18",
+      "old_box": [
+        1166,
+        389,
+        9,
+        15
+      ],
+      "new_box": [
+        1169,
+        391,
+        8,
+        12
+      ],
+      "text": "6",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    },
+    {
+      "id": "zh-Hant-4fd17484f60f-region-011-manual-24",
+      "old_box": [
+        771,
+        279,
+        20,
+        18
+      ],
+      "new_box": [
+        762,
+        275,
+        32,
+        26
+      ],
+      "text": "55",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    },
+    {
+      "id": "zh-Hant-4fd17484f60f-region-011-manual-25",
+      "old_box": [
+        1150,
+        279,
+        20,
+        18
+      ],
+      "new_box": [
+        1142,
+        275,
+        34,
+        26
+      ],
+      "text": "64",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    },
+    {
+      "id": "zh-Hant-4fd17484f60f-region-011-manual-26",
+      "old_box": [
+        894,
+        444,
+        21,
+        20
+      ],
+      "new_box": [
+        887,
+        440,
+        32,
+        27
+      ],
+      "text": "75",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    },
+    {
+      "id": "zh-Hant-4fd17484f60f-region-011-manual-27",
+      "old_box": [
+        642,
+        444,
+        21,
+        20
+      ],
+      "new_box": [
+        634,
+        440,
+        32,
+        27
+      ],
+      "text": "63",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    },
+    {
+      "id": "zh-Hant-4fd17484f60f-region-011-manual-28",
+      "old_box": [
+        769,
+        444,
+        21,
+        20
+      ],
+      "new_box": [
+        761,
+        440,
+        33,
+        27
+      ],
+      "text": "71",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    },
+    {
+      "id": "zh-Hant-8000181feee6-region-022-supplement1",
+      "old_box": [
+        608,
+        292,
+        22,
+        15
+      ],
+      "new_box": [
+        605,
+        289,
+        28,
+        21
+      ],
+      "text": "21",
+      "reason": "Visual ROI correction: include complete italic/outlined digits or exclude adjacent Chinese stroke; text and OCR parameters unchanged."
+    }
+  ]
+}

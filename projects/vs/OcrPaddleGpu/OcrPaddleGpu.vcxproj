@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<ItemGroup Label="ProjectConfigurations"><ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration><ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration></ItemGroup>
+<PropertyGroup Label="Globals"><ProjectGuid>{39D98F8B-8F9F-5F89-82FD-DD924D562A58}</ProjectGuid><Keyword>Win32Proj</Keyword><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+<PropertyGroup Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><PlatformToolset>v143</PlatformToolset><CharacterSet>Unicode</CharacterSet><UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries></PropertyGroup>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+<Import Project="..\OpenAR.Common.props" />
+
+<PropertyGroup><OutDir>$(OpenAROutput)plugins\</OutDir><IntDir>$(OpenARRoot)out\obj\$(OpenARProfile)\$(Configuration)\OcrPaddleGpu\</IntDir></PropertyGroup>
+<ItemDefinitionGroup><Link><AdditionalDependencies>onnxruntime.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ONNXRuntimeRoot)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories></Link></ItemDefinitionGroup>
+<ItemGroup><ClCompile Include="$(OpenARRoot)plugins\ocr\paddle_gpu\PluginExports.cpp" /><ClCompile Include="$(OpenARRoot)plugins\ocr\paddle_common\TextDetector.cpp" /><ClCompile Include="$(OpenARRoot)plugins\ocr\paddle_common\TextRecognizer.cpp" /><ClCompile Include="$(OpenARRoot)plugins\ocr\paddle_common\Dictionary.cpp" /><ClCompile Include="$(OpenARRoot)3rdparty\src\ppocr\clipper.cpp" /><ClCompile Include="$(OpenARRoot)3rdparty\src\ppocr\postprocess_op.cpp" /><ClCompile Include="$(OpenARRoot)3rdparty\src\ppocr\preprocess_op.cpp" /><ClCompile Include="$(OpenARRoot)3rdparty\src\ppocr\utility.cpp" /></ItemGroup><ItemGroup></ItemGroup>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+
+</Project>

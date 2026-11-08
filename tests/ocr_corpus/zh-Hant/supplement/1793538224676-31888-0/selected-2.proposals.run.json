@@ -1,0 +1,67 @@
+{
+  "acceptance": false,
+  "pipeline": "OpenAR native configured profile",
+  "times": [
+    {
+      "image": "images/000181.png",
+      "native_full_pipeline_ms": 871.6367,
+      "regions": 19
+    },
+    {
+      "image": "images/000185.png",
+      "native_full_pipeline_ms": 1060.8248,
+      "regions": 33
+    },
+    {
+      "image": "images/000189.png",
+      "native_full_pipeline_ms": 766.5093,
+      "regions": 35
+    },
+    {
+      "image": "images/000197.png",
+      "native_full_pipeline_ms": 817.6844,
+      "regions": 31
+    },
+    {
+      "image": "images/000201.png",
+      "native_full_pipeline_ms": 715.2986,
+      "regions": 30
+    },
+    {
+      "image": "images/000209.png",
+      "native_full_pipeline_ms": 599.6122,
+      "regions": 19
+    },
+    {
+      "image": "images/000213.png",
+      "native_full_pipeline_ms": 631.3978,
+      "regions": 22
+    },
+    {
+      "image": "images/000225.png",
+      "native_full_pipeline_ms": 1011.3488,
+      "regions": 31
+    },
+    {
+      "image": "images/000249.png",
+      "native_full_pipeline_ms": 1222.5006,
+      "regions": 42
+    },
+    {
+      "image": "images/000257.png",
+      "native_full_pipeline_ms": 488.255,
+      "regions": 15
+    },
+    {
+      "image": "images/000269.png",
+      "native_full_pipeline_ms": 586.7294,
+      "regions": 11
+    }
+  ],
+  "note": "Timings include detection+recognition, cold start, no warmup; not acceptance metrics.",
+  "files": {
+    "D:\\OpenAR-main\\out\\cpu\\Release\\plugins\\OcrPaddleCpu.dll": "e0bdf73207ff7db5283e6a2179a07c1273341ce28a0cd473336b499c8f8722e0",
+    "D:\\OpenAR-main\\out\\cpu\\Release\\onnxruntime.dll": "b2ba7ca16e0e4fe71ad5148744ab885a2f5809e52a0c3de4d9ba3853a03977f9",
+    "D:\\OpenAR-main\\models\\ocr\\zh-Hant.json": "7717661346852e5ddaa0668b5a1064a6cc23b4af0d394bb20a7fafe55b42b68a"
+  }
+}

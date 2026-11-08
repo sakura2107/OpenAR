@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2E8B7D43-6F85-4C9A-B132-4A7D9E01F3B5}</ProjectGuid>
+    <RootNamespace>OcrPaddleCpu</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(SolutionDir)build\Plugins.Common.props" />
+
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\opencv;$(ONNXRuntimeRoot)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world4100d.lib;onnxruntime.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\opencv;$(ONNXRuntimeRoot)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world4100.lib;onnxruntime.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ar\include\plugin\PluginApi.h" />
+    <ClInclude Include="..\..\ar\include\vision\Ocr.h" />
+    <ClInclude Include="..\..\plugins\ocr\paddle_common\PaddleEngine.h" />
+    <ClInclude Include="..\..\plugins\ocr\paddle_common\TextDetector.h" />
+    <ClInclude Include="..\..\plugins\ocr\paddle_common\TextRecognizer.h" />
+    <ClInclude Include="..\..\plugins\ocr\paddle_common\Dictionary.h" />
+    <ClInclude Include="..\..\plugins\ocr\paddle_common\OrtSession.hpp" />
+    <ClInclude Include="..\..\3rdparty\include\ppocr\clipper.h" />
+    <ClInclude Include="..\..\3rdparty\include\ppocr\utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\plugins\ocr\paddle_cpu\PluginExports.cpp" />
+    <ClCompile Include="..\..\plugins\ocr\paddle_common\TextDetector.cpp" />
+    <ClCompile Include="..\..\plugins\ocr\paddle_common\TextRecognizer.cpp" />
+    <ClCompile Include="..\..\plugins\ocr\paddle_common\Dictionary.cpp" />
+    <ClCompile Include="..\..\3rdparty\src\ppocr\clipper.cpp" />
+    <ClCompile Include="..\..\3rdparty\src\ppocr\postprocess_op.cpp" />
+    <ClCompile Include="..\..\3rdparty\src\ppocr\utility.cpp" />
+  </ItemGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+
+</Project>

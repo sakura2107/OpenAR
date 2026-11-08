@@ -1,0 +1,296 @@
+{
+  "stage": "Blind crop QA before any OCR",
+  "texts_changed": 0,
+  "reviewed_at": "2026-11-01T16:49:50.930645+00:00",
+  "changes": [
+    {
+      "id": "zh-Hant-accept-b1c-d08a61dd42c9-002",
+      "text": "任務",
+      "old_box": [
+        31,
+        250,
+        44,
+        30
+      ],
+      "new_box": [
+        31,
+        253,
+        39,
+        27
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-d08a61dd42c9-003",
+      "text": "咖啡廳",
+      "old_box": [
+        71,
+        674,
+        65,
+        28
+      ],
+      "new_box": [
+        73,
+        678,
+        53,
+        26
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-d08a61dd42c9-004",
+      "text": "課程表",
+      "old_box": [
+        180,
+        674,
+        68,
+        28
+      ],
+      "new_box": [
+        184,
+        678,
+        56,
+        26
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-d08a61dd42c9-005",
+      "text": "學生",
+      "old_box": [
+        304,
+        674,
+        47,
+        28
+      ],
+      "new_box": [
+        307,
+        678,
+        38,
+        26
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-d08a61dd42c9-006",
+      "text": "編輯",
+      "old_box": [
+        420,
+        674,
+        48,
+        28
+      ],
+      "new_box": [
+        421,
+        678,
+        43,
+        26
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-d08a61dd42c9-007",
+      "text": "社交",
+      "old_box": [
+        522,
+        674,
+        44,
+        28
+      ],
+      "new_box": [
+        522,
+        678,
+        40,
+        26
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-d08a61dd42c9-008",
+      "text": "商店",
+      "old_box": [
+        749,
+        674,
+        48,
+        28
+      ],
+      "new_box": [
+        751,
+        678,
+        43,
+        26
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-3fec1012d8cd-014",
+      "text": "懸賞通緝",
+      "old_box": [
+        674,
+        393,
+        78,
+        31
+      ],
+      "new_box": [
+        677,
+        398,
+        70,
+        25
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-3fec1012d8cd-017",
+      "text": "綜合戰術考試",
+      "old_box": [
+        977,
+        438,
+        117,
+        36
+      ],
+      "new_box": [
+        979,
+        444,
+        106,
+        28
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-3fec1012d8cd-019",
+      "text": "學園交流會",
+      "old_box": [
+        637,
+        596,
+        100,
+        34
+      ],
+      "new_box": [
+        640,
+        603,
+        90,
+        28
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-3fec1012d8cd-020",
+      "text": "戰術大賽",
+      "old_box": [
+        815,
+        596,
+        88,
+        34
+      ],
+      "new_box": [
+        815,
+        604,
+        81,
+        27
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-967f64991ebc-039",
+      "text": "特化學生",
+      "old_box": [
+        236,
+        84,
+        94,
+        36
+      ],
+      "new_box": [
+        238,
+        90,
+        87,
+        29
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-4fd2764fb2c5-081",
+      "text": "基本技能",
+      "old_box": [
+        202,
+        271,
+        78,
+        34
+      ],
+      "new_box": [
+        202,
+        274,
+        78,
+        25
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-4fd2764fb2c5-085",
+      "text": "742%",
+      "old_box": [
+        584,
+        232,
+        50,
+        29
+      ],
+      "new_box": [
+        586,
+        233,
+        45,
+        22
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-4fd2764fb2c5-086",
+      "text": "853%",
+      "old_box": [
+        978,
+        232,
+        51,
+        29
+      ],
+      "new_box": [
+        982,
+        233,
+        45,
+        22
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-642e27b216dc-095",
+      "text": "2 / 8",
+      "old_box": [
+        815,
+        643,
+        41,
+        33
+      ],
+      "new_box": [
+        819,
+        643,
+        38,
+        29
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-dec67d262bed-099",
+      "text": "0 / 1",
+      "old_box": [
+        603,
+        235,
+        47,
+        31
+      ],
+      "new_box": [
+        603,
+        235,
+        47,
+        28
+      ]
+    },
+    {
+      "id": "zh-Hant-accept-b1c-dec67d262bed-100",
+      "text": "2 / 5",
+      "old_box": [
+        603,
+        372,
+        47,
+        31
+      ],
+      "new_box": [
+        603,
+        372,
+        47,
+        28
+      ]
+    }
+  ],
+  "reviewed_sha256": "4f173751c4b86c44cdeba7591fcfd9ccbad4837f59e8aa726290095236d36729"
+}

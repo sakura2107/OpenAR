@@ -1,0 +1,205 @@
+{
+  "created_at": "2026-11-01T13:12:23.066244+00:00",
+  "source_sha256": "89e8440e0ce617b9d0af55b99a4ef69ce74b7660436bc3037578d775618bb04c",
+  "amended_sha256": "11075304a230edcdb367e0f569d5b99b54cc17eedd97bec770bdf7b261b1e0bb",
+  "changes": [
+    {
+      "id": "ja-20a0e6d6b7cd-region-016",
+      "old_box": [
+        769,
+        312,
+        91,
+        22
+      ],
+      "new_box": [
+        769,
+        312,
+        29,
+        22
+      ],
+      "old_text": "HP 20469",
+      "new_text": "HP",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    },
+    {
+      "id": "ja-20a0e6d6b7cd-region-017",
+      "old_box": [
+        1013,
+        312,
+        101,
+        22
+      ],
+      "new_box": [
+        1013,
+        312,
+        54,
+        22
+      ],
+      "old_text": "攻撃力 3234",
+      "new_text": "攻撃力",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    },
+    {
+      "id": "ja-20a0e6d6b7cd-region-018",
+      "old_box": [
+        769,
+        342,
+        81,
+        25
+      ],
+      "new_box": [
+        769,
+        342,
+        54,
+        25
+      ],
+      "old_text": "防御力 81",
+      "new_text": "防御力",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    },
+    {
+      "id": "ja-20a0e6d6b7cd-region-019",
+      "old_box": [
+        1014,
+        345,
+        100,
+        22
+      ],
+      "new_box": [
+        1014,
+        345,
+        54,
+        22
+      ],
+      "old_text": "治癒力 3502",
+      "new_text": "治癒力",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    },
+    {
+      "id": "ja-db8b531f83a4-region-001-manual-21",
+      "old_box": [
+        365,
+        340,
+        26,
+        25
+      ],
+      "new_box": [
+        365,
+        342,
+        23,
+        22
+      ],
+      "old_text": "50",
+      "new_text": "50",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    },
+    {
+      "id": "ja-db8b531f83a4-region-001-manual-22",
+      "old_box": [
+        496,
+        340,
+        26,
+        25
+      ],
+      "new_box": [
+        495,
+        342,
+        20,
+        22
+      ],
+      "old_text": "51",
+      "new_text": "51",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    },
+    {
+      "id": "ja-db8b531f83a4-region-001-manual-23",
+      "old_box": [
+        626,
+        340,
+        26,
+        25
+      ],
+      "new_box": [
+        626,
+        342,
+        23,
+        22
+      ],
+      "old_text": "52",
+      "new_text": "52",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    },
+    {
+      "id": "ja-db8b531f83a4-region-001-manual-24",
+      "old_box": [
+        757,
+        340,
+        26,
+        25
+      ],
+      "new_box": [
+        757,
+        342,
+        23,
+        22
+      ],
+      "old_text": "53",
+      "new_text": "53",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    },
+    {
+      "id": "ja-db8b531f83a4-region-001-manual-25",
+      "old_box": [
+        887,
+        340,
+        26,
+        25
+      ],
+      "new_box": [
+        887,
+        342,
+        24,
+        22
+      ],
+      "old_text": "54",
+      "new_text": "54",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    },
+    {
+      "id": "ja-db8b531f83a4-region-001-manual-26",
+      "old_box": [
+        1018,
+        340,
+        26,
+        25
+      ],
+      "new_box": [
+        1018,
+        342,
+        23,
+        22
+      ],
+      "old_text": "55",
+      "new_text": "55",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    },
+    {
+      "id": "ja-db8b531f83a4-region-001-manual-27",
+      "old_box": [
+        1149,
+        340,
+        26,
+        25
+      ],
+      "new_box": [
+        1146,
+        342,
+        24,
+        22
+      ],
+      "old_text": "60",
+      "new_text": "60",
+      "reason": "Visual annotation correction: split separate label/value fields or exclude adjacent Japanese day glyph; OCR parameters unchanged."
+    }
+  ]
+}

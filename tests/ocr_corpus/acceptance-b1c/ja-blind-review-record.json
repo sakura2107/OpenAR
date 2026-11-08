@@ -1,0 +1,265 @@
+{
+  "stage": "new independent batch blind ROI QA, before any OCR",
+  "source_draft_sha256": "49931488829e56a440b708cda526342ab97a160fa3b782db7383bdd638f9ed25",
+  "reviewed_sha256": "f0bf9639166f60dca9868a9e7235b358c1e51f4ddfaf5f05a255172dfc8c2acd",
+  "text_changes": 0,
+  "reviewed_at": "2026-11-01T16:23:17.529813+00:00",
+  "changes": [
+    {
+      "id": "ja-accept-b1c-33f6b0a1d499-031",
+      "text": "94",
+      "old_box": [
+        677,
+        208,
+        38,
+        33
+      ],
+      "new_box": [
+        681,
+        214,
+        33,
+        29
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-6a2f5ea37eb5-040",
+      "text": "保有チケット",
+      "old_box": [
+        83,
+        472,
+        117,
+        36
+      ],
+      "new_box": [
+        85,
+        474,
+        113,
+        32
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-6a2f5ea37eb5-045",
+      "text": "96",
+      "old_box": [
+        133,
+        288,
+        49,
+        47
+      ],
+      "new_box": [
+        133,
+        288,
+        45,
+        47
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-6a2f5ea37eb5-046",
+      "text": "72",
+      "old_box": [
+        555,
+        199,
+        51,
+        46
+      ],
+      "new_box": [
+        555,
+        199,
+        45,
+        46
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-6a2f5ea37eb5-047",
+      "text": "85",
+      "old_box": [
+        555,
+        358,
+        51,
+        47
+      ],
+      "new_box": [
+        555,
+        358,
+        45,
+        47
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-6a2f5ea37eb5-048",
+      "text": "91",
+      "old_box": [
+        555,
+        518,
+        51,
+        47
+      ],
+      "new_box": [
+        555,
+        518,
+        45,
+        47
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-def0128ffec9-058",
+      "text": "90",
+      "old_box": [
+        235,
+        543,
+        27,
+        27
+      ],
+      "new_box": [
+        235,
+        546,
+        27,
+        24
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-def0128ffec9-059",
+      "text": "4",
+      "old_box": [
+        220,
+        522,
+        21,
+        28
+      ],
+      "new_box": [
+        211,
+        520,
+        32,
+        29
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-def0128ffec9-060",
+      "text": "2",
+      "old_box": [
+        445,
+        522,
+        21,
+        28
+      ],
+      "new_box": [
+        436,
+        520,
+        32,
+        29
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-def0128ffec9-061",
+      "text": "3",
+      "old_box": [
+        670,
+        522,
+        21,
+        28
+      ],
+      "new_box": [
+        661,
+        520,
+        32,
+        29
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-4baf94ccb6ad-065",
+      "text": "75",
+      "old_box": [
+        677,
+        207,
+        38,
+        34
+      ],
+      "new_box": [
+        681,
+        214,
+        33,
+        29
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-20ba47311ef8-072",
+      "text": "通常アイテム",
+      "old_box": [
+        48,
+        120,
+        146,
+        39
+      ],
+      "new_box": [
+        52,
+        120,
+        143,
+        39
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-20ba47311ef8-074",
+      "text": "カケラ(文字)",
+      "old_box": [
+        48,
+        278,
+        142,
+        38
+      ],
+      "new_box": [
+        52,
+        278,
+        138,
+        38
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-20ba47311ef8-075",
+      "text": "カケラ(その他)",
+      "old_box": [
+        49,
+        358,
+        160,
+        39
+      ],
+      "new_box": [
+        52,
+        358,
+        158,
+        39
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-20ba47311ef8-076",
+      "text": "総力戦",
+      "old_box": [
+        49,
+        437,
+        83,
+        39
+      ],
+      "new_box": [
+        53,
+        437,
+        80,
+        39
+      ]
+    },
+    {
+      "id": "ja-accept-b1c-20ba47311ef8-077",
+      "text": "大決戦",
+      "old_box": [
+        48,
+        515,
+        87,
+        39
+      ],
+      "new_box": [
+        53,
+        515,
+        82,
+        39
+      ]
+    }
+  ]
+}

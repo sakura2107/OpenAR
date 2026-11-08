@@ -1,0 +1,9 @@
+{
+  "backend": "mumu",
+  "device_id": "127.0.0.1:16384",
+  "serial": "127.0.0.1:16384",
+  "mumu_path": "YOUR_MUMU_INSTALL_DIRECTORY",
+  "mumu_index": 0,
+  "command_timeout_ms": 5000,
+  "rotation": 0
+}

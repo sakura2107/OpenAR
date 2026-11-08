@@ -1,0 +1,6 @@
+# Isolated OFFLINE conversion tooling, not part of the distributed runtime.
+paddlepaddle==3.1.1
+paddle2onnx==2.1.0
+onnx==1.17.0
+PyYAML==6.0.3
+setuptools==75.8.0

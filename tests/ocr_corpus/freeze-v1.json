@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-11-01T13:07:42.155224+00:00",
+  "purpose": "Initial independent test; model/profile chosen only from prior tune set. Further supplements are separate batches.",
+  "files": {
+    "tests\\ocr_corpus\\annotations-frozen-v1.jsonl": "89e8440e0ce617b9d0af55b99a4ef69ce74b7660436bc3037578d775618bb04c",
+    "models\\ocr\\ja.json": "4fc052d407e22708e3b60d43d48d6d85e5366f844eec24e294c240fb7bd79794",
+    "models\\ocr\\zh-Hant.json": "7717661346852e5ddaa0668b5a1064a6cc23b4af0d394bb20a7fafe55b42b68a"
+  }
+}

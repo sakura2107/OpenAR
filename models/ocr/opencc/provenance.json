@@ -1,0 +1,13 @@
+{
+  "version": "opencc-stcharacters-b1d-v1",
+  "commit": "fae2a0a911c30764e669a7d8b0591cd8e852934a",
+  "url": "https://github.com/BYVoid/OpenCC/blob/fae2a0a911c30764e669a7d8b0591cd8e852934a/data/dictionary/STCharacters.txt",
+  "sha256": "a0ca1601c70648cf48b33c3c6210ccbecc5c7eead4b4c3daf76587ba2c03582b",
+  "rule": "Block one-codepoint sources with only distinct one-codepoint traditional targets; retain identity/ambiguous forms. No post-decoding conversion.",
+  "blocked_count": 3809,
+  "license": "Apache-2.0",
+  "variants_sha256": "245b94eb5842957e735dd44b7e7d4ff469a3643126cc8fa511adda5281e9cb86",
+  "v2_version": "opencc-stcharacters-tw-b1d-v2",
+  "v2_blocked_count": 3802,
+  "v2_rule": "ST non-identity one-codepoint sources, retaining identity/ambiguous forms and all one-codepoint TWVariants targets. No post-decoding replacement."
+}

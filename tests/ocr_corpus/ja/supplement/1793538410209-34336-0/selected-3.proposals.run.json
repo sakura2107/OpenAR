@@ -1,0 +1,37 @@
+{
+  "acceptance": false,
+  "pipeline": "OpenAR native configured profile",
+  "times": [
+    {
+      "image": "images/000215.png",
+      "native_full_pipeline_ms": 929.2508,
+      "regions": 39
+    },
+    {
+      "image": "images/000259.png",
+      "native_full_pipeline_ms": 865.1497,
+      "regions": 55
+    },
+    {
+      "image": "images/000279.png",
+      "native_full_pipeline_ms": 474.3059,
+      "regions": 29
+    },
+    {
+      "image": "images/000283.png",
+      "native_full_pipeline_ms": 685.5685,
+      "regions": 36
+    },
+    {
+      "image": "images/000299.png",
+      "native_full_pipeline_ms": 71.2887,
+      "regions": 1
+    }
+  ],
+  "note": "Timings include detection+recognition, cold start, no warmup; not acceptance metrics.",
+  "files": {
+    "D:\\OpenAR-main\\out\\cpu\\Release\\plugins\\OcrPaddleCpu.dll": "e0bdf73207ff7db5283e6a2179a07c1273341ce28a0cd473336b499c8f8722e0",
+    "D:\\OpenAR-main\\out\\cpu\\Release\\onnxruntime.dll": "b2ba7ca16e0e4fe71ad5148744ab885a2f5809e52a0c3de4d9ba3853a03977f9",
+    "D:\\OpenAR-main\\models\\ocr\\ja.json": "4fc052d407e22708e3b60d43d48d6d85e5366f844eec24e294c240fb7bd79794"
+  }
+}
