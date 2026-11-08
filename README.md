@@ -1,36 +1,77 @@
 # OpenAR
 
-B3 后端：新增通用 [JobHost](docs/HOST.md)，提供设备队列、取消、事件游标与可恢复历史；CPU97/GPU99回归通过。BA stdio 接入、协议与便携包放在独立 BA-Auto 仓库。B2 已完成，见 [B2c真机验收](docs/LOOP_B2C_NATIVE.md)。
+**基于 C++ 与计算机视觉的通用安卓界面自动化运行时**
 
-B2b 已增加导航 settle、busy、毫秒未知预算及有限恢复唤醒接口；CPU81/GPU83、37项循环专项、26例1744帧精确回放通过。真机新批次待用户在场同意，详见 [B2b报告](docs/LOOP_B2B.md)。
+OpenAR 是一个面向安卓模拟器（ADB / MuMu）的自动化框架。它负责截图、识别、点击、超时、取消、恢复和诊断。业务脚本只要描述三件事：“当前在哪个界面、做什么动作、动作之后应该看到什么”。框架本身不依赖任何特定游戏，蔚蓝档案、明日方舟等只是接入示例。具体游戏的任务流程放在各自独立的仓库里。
 
-B2 新增通用 [C++ reaction loop API](docs/LOOP.md) 和 [JSONL事件协议](docs/LOOP_EVENTS.md)，与现有JSON pipeline共用底层；离线验收CPU66/GPU68及22项循环专项通过。业务导航脚本在独立仓库，主库不包含游戏流程。
+> **English summary.** OpenAR is a C++20 runtime for automating Android UIs on emulators (ADB / MuMu). It captures frames, recognises them with template matching (NCC / SSIM, CPU or CUDA) and PaddleOCR (ONNX Runtime, CPU or GPU), performs input, and confirms every transition on a fresh frame. Deadlines, cooperative cancellation, bounded recovery and full traces with deterministic replay are built in. Recognition and device backends are DLL plugins behind a C ABI. Game-specific logic lives in separate resource packs and repositories; the core stays game-agnostic.
 
-B1d：按用户/Claude结论，B1有条件通过。[回归修复与冻结报告](docs/OCR_B1D.md)记录日服二级数字备用、繁中CTC字符屏蔽、CPU/GPU回归和新冻结 `freeze-b1d-final.json`。星级徽章仅在临时原型中测试，主库无游戏专用实现；用户脚本使用模板匹配。本轮与另一项编译并行，时延标为参考；未采图，B2等待用户交接。
+## 特性
 
-B1c 历史记录：已完成最终冻结，入口为 [B1c 回报](docs/OCR_B1C.md) 和 [独立验收步骤](docs/OCR_B1C_ACCEPTANCE.md)。最终清单 `tests/ocr_corpus/freeze-b1c-final.json`；通用配置为 `ja-b1c-final.json` / `zh-Hant-b1c-final.json`。旧回归已达本轮目标；Claude 20条抽查及两处元数据/ROI修订后，已完成一次独立验收，结果未通过：日服数字35/40、繁中规范化文字56/60，且日服时延超标。两服封闭集均60/60。[独立验收报告](docs/OCR_B1C_INDEPENDENT_ACCEPTANCE.md)保留完整差距；未调参或重跑，B1尚未结束，B2等待用户通知。
+- **可确认的状态转换**：每一步都是“识别 → 动作 → 重新截图确认”。点击之后即使返回错误，也会重新识别当前画面，不会盲目重复可能已经生效的操作。
+- **两种编写方式**
+  - **JSON 资源包**（pipeline）：声明状态、动作和后继状态，加载时做 Schema、引用、ROI、正则和预算校验。
+  - **C++ 反应循环 API**（`ar/include/loop`）：用 `Task` / `Phase` / `see(...)` 写 do-while 风格的流程，带恢复锚点和 JSONL 事件流。
+- **识别后端**
+  - 模板匹配：NCC、SSIM，各有 CPU 版和 CUDA 版。
+  - OCR：PaddleOCR（PP-OCRv3/v4/v5）ONNX 推理，支持按服务器配置的 profile（日服 `ja`、繁中 `zh-Hant`），包括字典规范化、OpenCC 简繁转换、CTC 字符屏蔽、数字专用模型和裁块直识别。
+- **设备层**：ADB 和 MuMu 原生 SDK 控制器。按设备 ID 互斥；Frame 带会话和代次，旧画面不能被拿去点击；参考分辨率、旋转和 viewport 不匹配时直接拒绝，不会猜坐标。
+- **可靠性**：所有操作共享一个截止时间并支持协作式取消；子进程用 Job Object 统一收回；错误分类保留后端和原生错误码；插件加载时检查完整导出，创建失败不会留下不可用的对象。
+- **JobHost 任务宿主**（`ar/include/host`）：设备队列、并发、取消、幂等提交、重启后历史可恢复、带游标的事件流，供 GUI 或外部进程接入。
+- **可观测与回放**：Trace 记录事件和证据帧，可以离线精确回放识别决策，用来复现问题和做回归测试。
+- **插件化**：算法和设备后端都是 DLL，通过 C ABI（v1 兼容，v2 显式传入缓冲区长度并由插件自己释放结果句柄）加载，C++ 类型不跨 DLL 边界。
 
-B1b 最新进度见 [评分、数字修复与回归报告](docs/OCR_B1B.md)。两服数字旧回归集语义正确率均为100%；日文规范化文字与单次尾延迟仍有未通过项，新独立验收集尚未采集。B1b 配置为 `models/ocr/ja-b1b-v3.json` / `zh-Hant-b1b-v3.json`，修订语料为 `tests/ocr_corpus/annotations-b1b-v4.jsonl`。
+## 架构
 
-B1 OCR 体检：只截图采集命令及两服手动路线见 [OCR_CAPTURE](docs/OCR_CAPTURE.md)；已核实的问题、模型/字典证据和未完成验收项见 [OCR_HEALTHCHECK](docs/OCR_HEALTHCHECK.md)。已完成两服真实截图回归，准确率和逐裁块时延仍未通过验收；验收通过前不编写游戏任务。
+```text
+CLI / SDK / JobHost
+  ├─ ResourceBundle：manifest + pipeline + 模板 + OCR 配置（不可变、共享）
+  ├─ Tasker / TaskRunner / loop::Context：识别 → 动作 → 确认
+  │    ├─ 取消、总/节点截止时间、转换/恢复预算
+  │    ├─ Extensions：自定义识别与动作
+  │    └─ Trace / Replay：事件、证据帧、确定性回放
+  └─ DeviceSession：设备互斥、帧代次、坐标变换
+       └─ IController → ADB / MuMu 插件
+识别服务 → NCC / SSIM / PaddleOCR 插件（CPU / GPU）
+```
 
-用 C++ 和计算机视觉开发通用安卓界面自动化。资源包描述状态、动作和后继状态，运行层处理截图、坐标变换、取消、超时、恢复和诊断。BA、明日方舟是应用示例；框架不依赖特定游戏。
+详见 [架构与可靠性边界](docs/ARCHITECTURE.md)、[资源与 SDK 指南](docs/RESOURCE_GUIDE.md)、[反应循环 API](docs/LOOP.md)、[JSONL 事件协议](docs/LOOP_EVENTS.md)、[JobHost](docs/HOST.md)。
 
-保留 NCC/SSIM、PaddleOCR、ADB/MuMu 和 DLL 插件。CPU 为默认构建，GPU 独立可选。Windows x64，公共接口 C++20，CUDA 内核 C++17。
+## 目录
 
-## 构建与验证
+| 路径 | 内容 |
+|---|---|
+| `include/ar/OpenAR.h`、`ar/include` | 公共 SDK 头文件 |
+| `ar/src/runtime` | 会话、资源、任务、回放、Trace |
+| `ar/src/loop` | C++ 反应循环与模拟器 |
+| `ar/src/host` | JobHost 任务宿主 |
+| `plugins/` | `matcher`（NCC/SSIM，CPU/CUDA）、`ocr`（Paddle CPU/GPU）、`control`（ADB/MuMu）、`device`（MuMu） |
+| `apps/cli` | `OpenAR.exe` 命令行宿主 |
+| `examples/` | SDK 接入示例、设备配置模板 |
+| `resources/android-demo` | 离线演示资源包（测试图片由代码生成） |
+| `models/ocr` | OCR profile 配置与 OpenCC 词表 |
+| `schemas/` | 资源包与事件的 JSON Schema |
+| `tests/`、`benchmarks/` | 单元/集成/故障注入/回放测试，性能基准；`tests/ocr_corpus` 为 OCR 标注语料 |
+| `scripts/` | 构建、检查、打包、OCR 采集/标注/验收/基准工具 |
 
-安装 VS2022 C++ 桌面工具、Windows SDK。复制 `deps.example.props` 为忽略的 `deps.local.props`，配置 ONNX Runtime CPU/GPU 路径。OpenCV 4.10 头文件/导入库/DLL 放在 `3rdparty/include`、`3rdparty/lib/opencv`、`3rdparty/bin`；新检出需自行准备二进制依赖。GPU 另需 CUDA 12.9、cuDNN 9 和 NVIDIA 驱动。
+## 构建
+
+环境：Windows x64、VS2022（C++ 桌面开发）、Windows SDK。公共接口 C++20，CUDA 内核 C++17。
+
+1. 复制 `deps.example.props` 为 `deps.local.props`（已忽略），填写 ONNX Runtime CPU/GPU 路径。
+2. 把 OpenCV 4.10 放到 `3rdparty/include`、`3rdparty/lib/opencv`、`3rdparty/bin`。二进制依赖不随仓库分发。
+3. GPU 构建另需 CUDA 12.9、cuDNN 9 和 NVIDIA 驱动。
+4. OCR 官方 ONNX 模型不在仓库中，用 `scripts/ocr_prepare_models.py` 下载到 `models/official/`（来源与校验信息见同目录的 `*.provenance.json`）。
 
 ```powershell
 ./scripts/build.ps1 -Profile cpu -Tests
 ./scripts/check.ps1 -Profile cpu
-./scripts/check.ps1 -Profile gpu
+./scripts/check.ps1 -Profile gpu   # 可选
 ```
 
-`build_release.bat`、`ARFrameWork.sln` 和 `OpenAR.cpu.sln` 默认 CPU；`OpenAR.gpu.sln` 为 GPU。输出 `out/<profile>/Release`，完整日志 `out/build-<profile>-Release.log`。`ARFrameWork.legacy.sln` 保留历史布局，新构建以新解决方案为准。
+`OpenAR.cpu.sln` 是默认的 CPU 构建，`OpenAR.gpu.sln` 是 GPU 构建，输出在 `out/<profile>/Release`。
 
-## 离线示例
+## 快速体验（无需设备）
 
 ```powershell
 $cli = './out/cpu/Release/OpenAR.exe'
@@ -40,34 +81,40 @@ $cli = './out/cpu/Release/OpenAR.exe'
 & $cli replay --resource ./resources/android-demo --replay ./resources/android-demo/replay-uncertain.json --trace ./out/traces
 ```
 
-示例验证“识别按钮 → 点击 → 确认目标页”，及点击返回错误但已生效时重新识别的恢复路径。测试图片由代码生成。`make-demo --output DIR` 可重新生成，`schemas --output DIR` 导出校验规则。
+演示流程是“识别按钮 → 点击 → 确认进入目标页”，另外还演示了点击返回错误但实际已生效时的恢复路径。`make-demo --output DIR` 可以重新生成演示资源，`schemas --output DIR` 导出校验规则。
 
-## 真实设备
+## 连接真实设备
 
-复制 `examples/device.adb.json` 或 `examples/device.mumu.json`，填写实际 serial、MuMu 安装目录和实例编号。`device_id` 唯一标识物理设备，建议使用 serial；同一 ID 的任务在进程内互斥。
+复制 `examples/device.adb.json` 或 `examples/device.mumu.json` 为 `device.local.json`，填写 serial、MuMu 安装目录和实例编号：
 
 ```powershell
 & $cli run --resource YOUR_RESOURCE --device ./device.local.json --models ./models --trace ./out/traces
 ```
 
-`run` 执行资源声明的操作，Ctrl+C 请求取消。按键使用 Android KEYCODE。MuMu 原生 SDK 负责截图/触摸，按键、滑动和应用启停走 ADB。参考分辨率、旋转和 viewport 必须正确，长宽比失配时拒绝猜测坐标。
+按 Ctrl+C 请求取消。MuMu 原生 SDK 负责截图和触摸；按键、滑动、应用启停走 ADB。
 
-## 开发与分发
+## 打包
 
-- `ar/include`、`include/ar/OpenAR.h`：公共 SDK。
-- `ar/src/runtime`：会话、不可变资源、任务、回放、诊断。
-- `plugins`：算法/控制/设备后端，v1 兼容及 v2 ABI。
-- `apps/cli`、`examples/sdk`：宿主与接入示例。
-- `tests`、`benchmarks`：故障注入、集成、持续运行、性能对比。
-- `OpenARProxy.lib`：可选代理扩展。
+```powershell
+./scripts/package.ps1 -Profile cpu -IncludeModels   # 输出 dist/OpenAR-cpu，含 SHA256 清单
+./scripts/package.ps1 -Profile gpu
+```
 
-PowerShell 7：`./scripts/package.ps1 -Profile cpu -IncludeModels`，产出 `dist/OpenAR-cpu`，含 CLI、DLL、SDK、资源、文档和 SHA256 清单。GPU 用 `-Profile gpu`，代理库用 `-IncludeProxy`。目标机需 MSVC x64 运行库，GPU 另需驱动。第三方及模型许可见 `docs/THIRD_PARTY.md`。
+目标机需要 MSVC x64 运行库，GPU 版另需驱动。
 
-[架构](docs/ARCHITECTURE.md) · [资源与 SDK](docs/RESOURCE_GUIDE.md) · [迁移](docs/MIGRATION.md) · [验收记录](docs/VALIDATION.md)
+## 开发进度
 
+| 阶段 | 内容 | 状态 |
+|---|---|---|
+| 重构 | 从旧框架重构为通用运行时：错误语义、插件 ABI v2、截止时间/取消、Trace 回放、CPU/GPU 分离构建 | 完成 · [计划](REFACTOR_PLAN.md) · [验收](docs/VALIDATION.md) |
+| B1 OCR | 两服真实截图语料、标注与冻结清单；profile 化 OCR；数字修复、CTC 屏蔽；独立验收 | 有条件通过 · [B1d 报告](docs/OCR_B1D.md) · [体检](docs/OCR_HEALTHCHECK.md) |
+| B2 循环 | C++ 反应循环 API、JSONL 事件、导航 settle/busy、有限恢复；离线回放与真机验收 | 完成 · [B2c 真机验收](docs/LOOP_B2C_NATIVE.md) |
+| B3 宿主 | JobHost：设备队列、取消、幂等、事件游标、可恢复历史 | 完成 · [HOST](docs/HOST.md) |
 
-## B1 OCR 体检与多语言候选
+## 许可与致谢
 
-[OCR 实测及未通过项](docs/OCR_HEALTHCHECK.md) · [只截图采集说明](docs/OCR_CAPTURE.md)。真实语料入口是 `tests/ocr_corpus/annotations.jsonl`。候选配置 `models/ocr/ja.json`、`models/ocr/zh-Hant.json` 使用可追溯的官方 ONNX 和字典，支持配置颜色、归一化、补边、输入尺寸、阈值、线程和数字模型。两份配置状态均为 candidate，未通过 B1 总体验收；本轮不新增游戏任务脚本。
+本项目以 [MIT](LICENSE) 许可发布。第三方库与模型（OpenCV、ONNX Runtime、PaddleOCR 模型、OpenCC 词表等）的许可见 [docs/THIRD_PARTY.md](docs/THIRD_PARTY.md) 和 `docs/licenses/`。
 
-SDK 可设置 `ar::vision::OcrParams::profile` 后调用 `create_ocr`；已知文本或数字裁块使用 `recognize_crop_checked(image, roi, numbers)` 跳过检测。旧 ABI 不支持 profile/crop 时明确返回错误，不忽略配置。完整格式和复现实测见体检报告。
+设计上参考了 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 的 Controller / Resource / Tasker 分层与 Pipeline 思路，以及 BAAH 的“前置判断 → 动作 → 完成确认”模式。本项目没有复制这两者的代码或资源，也不承诺兼容它们的 JSON / C API。
+
+本项目由 [sakura2107](https://github.com/sakura2107) 与 GPT 协作开发。
