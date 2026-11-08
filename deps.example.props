@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <OpenAROnnxCpuRoot>YOUR_CPU_ONNX_DIRECTORY</OpenAROnnxCpuRoot>
+    <OpenAROnnxGpuRoot>YOUR_GPU_ONNX_DIRECTORY</OpenAROnnxGpuRoot>
+    <OpenARCudnnBin>YOUR_CUDNN_BIN_DIRECTORY</OpenARCudnnBin>
+    <OpenARCudaVersion>12.9</OpenARCudaVersion>
+  </PropertyGroup>
+</Project>

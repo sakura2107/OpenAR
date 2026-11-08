@@ -1,0 +1,281 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAR reaction loop event v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "type",
+    "run_id",
+    "phase",
+    "frame_id",
+    "time_ms",
+    "data"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "type": {
+      "enum": [
+        "loop.task.start",
+        "loop.task.end",
+        "loop.phase.start",
+        "loop.phase.end",
+        "loop.phase.skip",
+        "loop.frame",
+        "loop.recovery",
+        "loop.error"
+      ]
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string"
+    },
+    "frame_id": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "time_ms": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "event"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "event": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "decision",
+            "task_check",
+            "stabilizing"
+          ]
+        },
+        "selected": {
+          "type": "string"
+        },
+        "goal_evaluated": {
+          "type": "boolean"
+        },
+        "goal": {
+          "$ref": "#/$defs/observation"
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "evaluated"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "evaluated": {
+                "type": "boolean"
+              },
+              "result": {
+                "$ref": "#/$defs/observation"
+              }
+            }
+          }
+        },
+        "action": {
+          "type": "object",
+          "required": [
+            "type",
+            "side_effect",
+            "keycode"
+          ],
+          "properties": {
+            "type": {
+              "enum": [
+                "tap",
+                "key"
+              ]
+            },
+            "side_effect": {
+              "type": "boolean"
+            },
+            "keycode": {
+              "type": "integer"
+            },
+            "target": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "timing": {
+          "type": "object",
+          "required": [
+            "capture_ms",
+            "stable_wait_ms",
+            "recognition_ms",
+            "action_ms"
+          ],
+          "properties": {
+            "capture_ms": {
+              "type": "number",
+              "minimum": 0
+            },
+            "stable_wait_ms": {
+              "type": "number",
+              "minimum": 0
+            },
+            "recognition_ms": {
+              "type": "number",
+              "minimum": 0
+            },
+            "action_ms": {
+              "type": "number",
+              "minimum": 0
+            },
+            "trace_image_ms": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "image": {
+          "type": "string"
+        },
+        "replayable": {
+          "type": "boolean"
+        },
+        "loop_revision": {
+          "const": 2
+        },
+        "busy": {
+          "type": "boolean"
+        },
+        "settle_until": {
+          "type": "integer"
+        },
+        "settle_reason": {
+          "enum": [
+            "",
+            "goal",
+            "gone",
+            "expect",
+            "timeout"
+          ]
+        },
+        "settle_rule": {
+          "type": "string"
+        },
+        "rule_attempts": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        "retry_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "unknown_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unknown_limit_ms": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "phase_deadline_ms": {
+          "type": "integer"
+        },
+        "task_attempts": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "observation": {
+      "type": "object",
+      "required": [
+        "matched",
+        "score",
+        "box",
+        "text"
+      ],
+      "properties": {
+        "matched": {
+          "type": "boolean"
+        },
+        "score": {
+          "type": "number"
+        },
+        "box": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "integer"
+          }
+        },
+        "text": {
+          "type": "string"
+        },
+        "raw_ocr": {
+          "type": "array"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "loop.frame"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "required": [
+              "loop_revision",
+              "busy",
+              "settle_until",
+              "settle_reason",
+              "settle_rule",
+              "rule_attempts",
+              "retry_count",
+              "unknown_ms",
+              "unknown_limit_ms",
+              "phase_deadline_ms"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

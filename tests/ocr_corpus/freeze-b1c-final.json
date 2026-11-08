@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-11-01T15:49:45.659365+00:00",
+  "scoring_version": "b1b-v2",
+  "profiles": {
+    "ja": "models/ocr/ja-b1c-final.json",
+    "zh-Hant": "models/ocr/zh-Hant-b1c-final.json"
+  },
+  "optional_katakana_profile": "models/ocr/ja-katakana-b1c.json",
+  "reference_annotations": "tests/ocr_corpus/annotations-b1c-v5.jsonl",
+  "criteria": {
+    "closed_set": {
+      "ja": 0.99,
+      "zh-Hant": 0.99
+    },
+    "normalized_ui": {
+      "ja": 0.95,
+      "zh-Hant": 0.97
+    },
+    "numeric_semantics": 0.995,
+    "ui_p50_ms": 15,
+    "ui_max_crop_median_ms": 50,
+    "numbers_p50_ms": 5,
+    "numbers_max_crop_median_ms": 15,
+    "detection_p95_ms": 120,
+    "warmup": 2,
+    "repeats": 5,
+    "single_call_maximum": "reference only"
+  },
+  "selection": "Both general text profiles disable context padding. JA tune improved with padding but pre-acceptance regression worsened to98.78% closed-set, so conditional off was selected before this FINAL freeze. Earlier freeze-b1c.json is an unchanged candidate snapshot, not the independent acceptance version. Optional Japanese v3 katakana profile retained separately; no score substitution. No new acceptance screenshots have been captured or viewed.",
+  "files": {
+    "models/ocr/ja-b1c-final.json": "b2eb22e3b8adec0596ae1a747fc26a2898b24f899eb11e4a3e1726bc2355158b",
+    "models/ocr/ja-katakana-b1c.json": "dbc5594a77efdd35faee80e9cd2f6821efb1e352dc30df83d095e88ae703be4c",
+    "models/ocr/zh-Hant-b1c-final.json": "852a14b637f3a3baf6a1bab2b49bdf060b07551aa9eaa70ed8858f98931cdae8",
+    "models/official/PP-OCRv5_mobile_det.onnx": "c8d9b07063420ce5365c74e42532de48238feeeedcdb7a330b195708bc38a93f",
+    "models/official/PP-OCRv5_mobile_rec.onnx": "bcb195e3463eb9e46ef419b8a01ea4729577de5fd63c64f0a762e43bd64256e7",
+    "models/official/PP-OCRv5_mobile_rec.txt": "d1979e9f794c464c0d2e0b70a7fe14dd978e9dc644c0e71f14158cdf8342af1b",
+    "models/official/en_PP-OCRv4_mobile_rec.onnx": "5634cfafad2909f9fcd9886fe8e526c3480038ead12818598e3c91b3caa13912",
+    "models/official/en_PP-OCRv4_mobile_rec.txt": "5662df9d2d03f0e8ca0d3b0649d6acbab904b6a14b3d3521463c71c37c668ce3",
+    "models/official/japan_PP-OCRv3_mobile_rec.onnx": "7bf1bba295f6a289ebab6ade35d9a8a92acdcc9843c8da72640f463f373c1558",
+    "models/official/japan_PP-OCRv3_mobile_rec.txt": "1dcfcb41eec90576a945b3084f22ade11ced506e24f14879245b071698f308e8",
+    "out/cpu/Release/onnxruntime.dll": "b2ba7ca16e0e4fe71ad5148744ab885a2f5809e52a0c3de4d9ba3853a03977f9",
+    "out/cpu/Release/opencv_world4100.dll": "e6e31e55b9b377b775782c4b27a80b2460dffe3dbee7898e034d25729dca0198",
+    "out/cpu/Release/plugins/OcrPaddleCpu.dll": "05a83a4f7a857bc84076bab250ff15de4e91e0259e489e9059c7fe149ea0d6da",
+    "out/gpu/Release/onnxruntime.dll": "214d1e074b59066264f598760ce63bab24a20769d9aeb445b6dcafdf24845ad1",
+    "out/gpu/Release/opencv_world4100.dll": "e6e31e55b9b377b775782c4b27a80b2460dffe3dbee7898e034d25729dca0198",
+    "out/gpu/Release/plugins/OcrPaddleGpu.dll": "127531c2fe1d00c1f6352acd61d1e81e63a090af81ef580579b0deac29cf3aad",
+    "plugins/ocr/paddle_common/Dictionary.cpp": "5ece4c9e3be627288c46941b92fa3388440e44d5e6638c702c896cfc309681e7",
+    "plugins/ocr/paddle_common/Dictionary.h": "a3e6460c16ce4fbf578e0d32bc0a73edfbc10d177cb4bbff88574677b4d5fd87",
+    "plugins/ocr/paddle_common/OcrConfig.h": "6f44a9368c8772179998d6004a59500429bb2864d3d3379a00a2468e8cf3eff7",
+    "plugins/ocr/paddle_common/OrtSession.hpp": "7bb5052b7c7ae6cb507dc2439e0f70562dd4cca563c9e37bb8d94b2db33cca80",
+    "plugins/ocr/paddle_common/PaddleEngine.h": "6aa16c654a049444c32adc4e4a0796ffb453ababa2d11007ff423827091239b7",
+    "plugins/ocr/paddle_common/TextDetector.cpp": "393796d3d43ccf5910d228b5ff9564229b038efcc3f6b363f5c8fe90da4cc181",
+    "plugins/ocr/paddle_common/TextDetector.h": "87a9259ab03be446a3a717538d2e4cb460da91284c8f2226ed48bc3007dd998f",
+    "plugins/ocr/paddle_common/TextRecognizer.cpp": "fcbbfc02e3730206d49cdf5f401c2863b9714d26116b9f89248af8fcb47e2acc",
+    "plugins/ocr/paddle_common/TextRecognizer.h": "e90d5f5d390a403a4bcf273d4767e98bf3958a4d330b6c816be6074168aeac6d",
+    "scripts/capture-ocr.ps1": "b4d961cec07e85e68216fb732acee7c83f269c022fb3078d5017bb2af3bc5cdc",
+    "scripts/ocr_acceptance.py": "16b74205e8744e3ced88b34f82a4adbceed5c57248db77e5887e1ef95379c6cb",
+    "scripts/ocr_benchmark.py": "466551d39a87e2ef4ac0e7c169f74e550307c471ddebe352426ff677279f832d",
+    "scripts/ocr_corpus.py": "90b4b6eed29375ac73b1a0a1c9e3ad3125167b25017ee2230644e388e1e111f3",
+    "scripts/ocr_prelabel.py": "e13ebd53991c19f3d502b896db946c9ec660ebfe1adc27cc7616de147246bc27",
+    "scripts/ocr_report.py": "13b015b2a4aa261f243b514708d03cb80f339818fa4295bd61ec9090f43fceaa",
+    "tests/main.cpp": "4ae6b4a3bc2275ff7fce164180b18bb409862f818b466da900dbc69d9a76affc",
+    "tests/ocr_corpus/annotation-amendments-b1c-v5.json": "36fd506e3feb5a03458647903d1798fe250659be77472dfca2afcb7705671195",
+    "tests/ocr_corpus/annotations-b1c-v5.jsonl": "68d27e955bce5a33326639cc4782341f33324d9f57184f4283e0b829e04257c1",
+    "tests/test_ocr_report.py": "da46d96f2eeb908c1f4d4860b450d2a0d1d71ece7bfe70226d30fa4e06a1e91e"
+  },
+  "status": "final-before-independent-capture",
+  "verified_regression_outputs": {
+    "out/ocr-audit/b1c-final-regression-ja-cpu.json": "bbab71da2b11c7043ef47142fbebd05ebfc0b4841b69604dc086ed57d5d7861a",
+    "out/ocr-audit/b1c-final-regression-ja-gpu.json": "5e8e4ca7b9c01ab72a745fac155a512406c9ab4471b4015665054993afecf3f6",
+    "out/ocr-audit/b1c-final-regression-zh-Hant-cpu.json": "24f532f2877b92317c91927ceef5151e1cc5b4d93b3f737aab59e2b9b60a5cf0",
+    "out/ocr-audit/b1c-final-regression-zh-Hant-gpu.json": "b584116e7e264bbcedf8319722c96f59e004450d04a9c9042a4d488b0dc12317"
+  }
+}

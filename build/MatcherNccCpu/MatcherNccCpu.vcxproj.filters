@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ar\include\plugin">
+      <UniqueIdentifier>{6F41A9C8-2D57-4E03-9B18-3A5C0E7D214F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ar\include\vision">
+      <UniqueIdentifier>{93C7B0D5-6E28-4F9A-8C41-D7205F3E9B62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins\matcher\ncc_cpu">
+      <UniqueIdentifier>{B8E4F2A1-7C39-4D56-9A02-8E1F6C4B5D30}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ar\include\plugin\PluginApi.h">
+      <Filter>ar\include\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\vision\Matcher.h">
+      <Filter>ar\include\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\matcher\ncc_cpu\NccCpu.h">
+      <Filter>plugins\matcher\ncc_cpu</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\plugins\matcher\ncc_cpu\NccCpu.cpp">
+      <Filter>plugins\matcher\ncc_cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\matcher\ncc_cpu\PluginExports.cpp">
+      <Filter>plugins\matcher\ncc_cpu</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

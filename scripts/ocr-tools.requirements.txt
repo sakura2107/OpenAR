@@ -1,0 +1,7 @@
+# Offline tools only; OpenAR's C++ runtime does not depend on Python.
+# Use an isolated venv. Native prelabel uses ORT staged with OpenAR, not Python ORT.
+numpy==2.5.4
+opencv-python-headless==4.10.0.84
+onnx==1.19.1
+# Optional ocr_inspect.py --probe (contract smoke, never acceptance timings):
+onnxruntime==1.23.2

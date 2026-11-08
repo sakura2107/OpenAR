@@ -1,0 +1,13 @@
+{
+  "version": "b1d-v6",
+  "texts_changed": 0,
+  "source_files": {
+    "tests\\ocr_corpus\\annotations-b1c-v5.jsonl": "68d27e955bce5a33326639cc4782341f33324d9f57184f4283e0b829e04257c1",
+    "tests\\ocr_corpus\\acceptance-b1c\\annotations.jsonl": "e3d7dc6f55d95a10579705dee237c2c605768ed128a0ba63665f1cfffc839b87"
+  },
+  "combined_sha256": "9033db44362c184b955a673c9917397b99b89f5e38b7e86aae7cc56922bb7e9e",
+  "rows": 1557,
+  "changes": "Only rebased image paths for combining. Split labels preserved; B1c test role is now regression by user B1d instruction. Routing sidecar handles star badge ROI without changing truth or existing number_form.",
+  "claude_timing_decision": "User relayed Claude three diagnostic reruns; timing judged passed. Formal B1c result file remains unchanged.",
+  "b1_status": "conditional pass; B2 not started"
+}

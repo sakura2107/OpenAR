@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-11-01T14:55:44.577405+00:00",
+  "selection": "Tune only: ja retained hybrid 29/29; zh-Hant selected v5 mask width64 51/51 vs hybrid50/51, both p50 and max budgets met. Server remains diagnostic and is not selected due measured latency far above budget. Existing test is regression only; no new acceptance data captured.",
+  "files": {
+    "models/ocr/ja-b1b.json": "8931f4fdb9029d2cc631dc7009ff0ec790f2fd8d5358444f271e3a6d8481fbfc",
+    "models/ocr/zh-Hant-b1b.json": "8940beae52f335d6806e681a2edfcebc49b886d0e27ad0f694c0ba307412b173",
+    "tests/ocr_corpus/annotations-b1b-v4.jsonl": "bc255b17b0d6b705f08503e28e475ae39e2f0a185d3b004957d90565bd138db1",
+    "scripts/ocr_report.py": "afe5994f4594aefc17c1ccf1a549be278036ff4124e36087b36cd99d79966376",
+    "out/ocr-audit/b1b-tune/comparison.json": "2bb1eadae3f728c6c222390fe75aae8723cd6ab5b1c855c75b57093cca3218d3"
+  }
+}

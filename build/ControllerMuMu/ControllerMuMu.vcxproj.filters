@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="plugins\control\mumu">
+      <UniqueIdentifier>{FE111738-5F8E-4759-9E18-13BF0355C879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ar\include\control">
+      <UniqueIdentifier>{16B1B59D-08E2-4919-83FF-D9C45A2F8513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ar\include\plugin">
+      <UniqueIdentifier>{F97ADABC-3C50-4D43-B18A-D4A52DF867A4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\plugins\control\mumu\MuMuController.h">
+      <Filter>plugins\control\mumu</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\plugins\control\mumu\PluginExports.cpp">
+      <Filter>plugins\control\mumu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\control\mumu\MuMuController.cpp">
+      <Filter>plugins\control\mumu</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\ar\include\control\Controller.h">
+      <Filter>ar\include\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\control\AdbClient.hpp">
+      <Filter>ar\include\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\plugin\PluginApi.h">
+      <Filter>ar\include\plugin</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

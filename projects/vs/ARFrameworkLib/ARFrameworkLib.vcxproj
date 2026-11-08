@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<ItemGroup Label="ProjectConfigurations"><ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration><ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration></ItemGroup>
+<PropertyGroup Label="Globals"><ProjectGuid>{996C4839-A477-5C2C-9AD3-11950F368675}</ProjectGuid><Keyword>Win32Proj</Keyword><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+<PropertyGroup Label="Configuration"><ConfigurationType>StaticLibrary</ConfigurationType><PlatformToolset>v143</PlatformToolset><CharacterSet>Unicode</CharacterSet><UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries></PropertyGroup>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+<Import Project="..\OpenAR.Common.props" />
+
+<PropertyGroup><OutDir>$(OpenAROutput)</OutDir><IntDir>$(OpenARRoot)out\obj\$(OpenARProfile)\$(Configuration)\ARFrameworkLib\</IntDir></PropertyGroup>
+
+<ItemGroup><ClCompile Include="$(OpenARRoot)ar\src\host\JobHost.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\loop\Loop.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\loop\Simulator.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\control\Controller.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\device\DeviceController.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\log\ConsoleLogger.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\plugin\PluginLoader.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\runtime\Replay.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\runtime\Resource.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\runtime\Session.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\runtime\Tasker.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\runtime\Trace.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\vision\Matcher.cpp" /><ClCompile Include="$(OpenARRoot)ar\src\vision\Ocr.cpp" /></ItemGroup><ItemGroup></ItemGroup>
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+
+</Project>

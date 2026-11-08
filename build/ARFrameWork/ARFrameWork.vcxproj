@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ar\include\control\Controller.h" />
+    <ClInclude Include="..\..\ar\include\core\Cmd.hpp" />
+    <ClInclude Include="..\..\ar\include\core\INoCopy.hpp" />
+    <ClInclude Include="..\..\ar\include\core\Path.hpp" />
+    <ClInclude Include="..\..\ar\include\core\Registry.h" />
+    <ClInclude Include="..\..\ar\include\core\Str.hpp" />
+    <ClInclude Include="..\..\ar\include\device\DeviceController.h" />
+    <ClInclude Include="..\..\ar\include\log\ConsoleLogger.h" />
+    <ClInclude Include="..\..\ar\include\log\Logger.h" />
+    <ClInclude Include="..\..\ar\include\net\Http.h" />
+    <ClInclude Include="..\..\ar\include\net\ProxyClient.h" />
+    <ClInclude Include="..\..\ar\include\plugin\PluginApi.h" />
+    <ClInclude Include="..\..\ar\include\plugin\PluginLoader.h" />
+    <ClInclude Include="..\..\ar\include\vision\Detector.h" />
+    <ClInclude Include="..\..\ar\include\vision\Matcher.h" />
+    <ClInclude Include="..\..\ar\include\vision\Ocr.h" />
+    <ClInclude Include="..\..\ar\include\control\AdbClient.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ar\src\app\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ARFrameworkLib\ARFrameworkLib.vcxproj">
+      <Project>{e7a9c1f2-4b6d-4e38-9a2c-5d80b1f4e6a7}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\MatcherSsimCuda\MatcherSsimCuda.vcxproj">
+      <Project>{b2e7f5c4-8a63-4d91-9f3e-2c8b7d6a5e10}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\MatcherSsimCpu\MatcherSsimCpu.vcxproj">
+      <Project>{1d9a6c32-5e74-4b8f-9a21-3f6c8d90e2a4}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\OcrPaddleCpu\OcrPaddleCpu.vcxproj">
+      <Project>{2e8b7d43-6f85-4c9a-b132-4a7d9e01f3b5}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\OcrPaddleGpu\OcrPaddleGpu.vcxproj">
+      <Project>{3f9c8e54-7a96-4dab-8243-5b8eaf12a4c6}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\ControllerAdb\ControllerAdb.vcxproj">
+      <Project>{4a8d9f65-8ba7-4e9c-9354-6c9fba23b5d7}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\ControllerMuMu\ControllerMuMu.vcxproj">
+      <Project>{5b9eaf76-9cb8-4fad-8465-7dafcb34c6e8}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\DeviceMuMu\DeviceMuMu.vcxproj">
+      <Project>{6cafba87-adc9-40be-9576-8ebfdc45d7f9}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4c81dd42-53ef-49a4-bac8-c5b652626dfd}</ProjectGuid>
+    <RootNamespace>ARFrameWork</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Label="UserMacros">
+    <!-- Runtime dependency of the OCR plugin DLLs (copied next to the exe). -->
+    <ONNXRuntimeRoot Condition="'$(ONNXRuntimeRoot)' == ''">D:\3rdparty\onnx\onnxruntime-win-x64-gpu-1.26.0</ONNXRuntimeRoot>
+  </PropertyGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)build\ARFrameWork\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\ARFrameWork\$(Configuration)\obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)build\ARFrameWork\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\ARFrameWork\$(Configuration)\obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)ar\include;$(SolutionDir)3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\opencv;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world4100d.lib;winhttp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /E "$(SolutionDir)3rdparty\bin\opencv\opencv_world4100d.dll" "$(OutDir)"
+if exist "$(SolutionDir)3rdparty\bin\MuMu\*.dll" xcopy /Y /E "$(SolutionDir)3rdparty\bin\MuMu\*.dll" "$(OutDir)"
+if exist "$(SolutionDir)3rdparty\bin\adb\*.dll" xcopy /Y /E "$(SolutionDir)3rdparty\bin\adb\*.dll" "$(OutDir)"
+if exist "$(SolutionDir)3rdparty\bin\adb\*.exe" xcopy /Y /E "$(SolutionDir)3rdparty\bin\adb\*.exe" "$(OutDir)"
+xcopy /Y /E "$(ONNXRuntimeRoot)\lib\onnxruntime.dll" "$(OutDir)"
+xcopy /Y "$(ONNXRuntimeRoot)\lib\onnxruntime_providers_shared.dll" "$(OutDir)"
+xcopy /Y "$(ONNXRuntimeRoot)\lib\onnxruntime_providers_cuda.dll" "$(OutDir)"
+if not exist "$(OutDir)cudnn_graph64_9.dll" xcopy /Y "C:\Program Files\NVIDIA\CUDNN\v9.27\bin\12.9\x64\cudnn*64_9.dll" "$(OutDir)"
+xcopy /Y /E /I "$(SolutionDir)3rdparty\bin\mihomo\*" "$(OutDir)mihomo\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)ar\include;$(SolutionDir)3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\opencv;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world4100.lib;winhttp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /E "$(SolutionDir)3rdparty\bin\opencv\opencv_world4100.dll" "$(OutDir)"
+if exist "$(SolutionDir)3rdparty\bin\MuMu\*.dll" xcopy /Y /E "$(SolutionDir)3rdparty\bin\MuMu\*.dll" "$(OutDir)"
+if exist "$(SolutionDir)3rdparty\bin\adb\*.dll" xcopy /Y /E "$(SolutionDir)3rdparty\bin\adb\*.dll" "$(OutDir)"
+if exist "$(SolutionDir)3rdparty\bin\adb\*.exe" xcopy /Y /E "$(SolutionDir)3rdparty\bin\adb\*.exe" "$(OutDir)"
+xcopy /Y /E "$(ONNXRuntimeRoot)\lib\onnxruntime.dll" "$(OutDir)"
+xcopy /Y "$(ONNXRuntimeRoot)\lib\onnxruntime_providers_shared.dll" "$(OutDir)"
+xcopy /Y "$(ONNXRuntimeRoot)\lib\onnxruntime_providers_cuda.dll" "$(OutDir)"
+if not exist "$(OutDir)cudnn_graph64_9.dll" xcopy /Y "C:\Program Files\NVIDIA\CUDNN\v9.27\bin\12.9\x64\cudnn*64_9.dll" "$(OutDir)"
+xcopy /Y /E /I "$(SolutionDir)3rdparty\bin\mihomo\*" "$(OutDir)mihomo\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <OpenARRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\..\'))</OpenARRoot>
+    <OpenARProfile Condition="'$(OpenARProfile)'=='' and '$(SolutionName)'=='OpenAR.gpu'">gpu</OpenARProfile>
+    <OpenARProfile Condition="'$(OpenARProfile)'==''">cpu</OpenARProfile>
+    <OpenARCudaVersion Condition="'$(OpenARCudaVersion)'==''">12.9</OpenARCudaVersion>
+  </PropertyGroup>
+  <Import Project="$(OpenARRoot)deps.local.props" Condition="Exists('$(OpenARRoot)deps.local.props')" />
+  <PropertyGroup>
+    <ONNXRuntimeRoot Condition="'$(ONNXRuntimeRoot)'=='' and '$(OpenARProfile)'=='cpu'">$(OpenAROnnxCpuRoot)</ONNXRuntimeRoot>
+    <ONNXRuntimeRoot Condition="'$(ONNXRuntimeRoot)'=='' and '$(OpenARProfile)'=='gpu'">$(OpenAROnnxGpuRoot)</ONNXRuntimeRoot>
+    <OpenAROutput>$(OpenARRoot)out\$(OpenARProfile)\$(Configuration)\</OpenAROutput>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard><ConformanceMode>true</ConformanceMode><WarningLevel>Level4</WarningLevel>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(OpenARRoot)ar\include;$(OpenARRoot)include;$(OpenARRoot);$(OpenARRoot)3rdparty\include;$(ONNXRuntimeRoot)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Release'">MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Debug'">MultiThreadedDebugDLL</RuntimeLibrary>
+      <Optimization Condition="'$(Configuration)'=='Release'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)'=='Debug'">Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(OpenARRoot)3rdparty\lib\opencv;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies Condition="'$(Configuration)'=='Release'">opencv_world4100.lib;winhttp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">opencv_world4100d.lib;winhttp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem><GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

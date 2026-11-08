@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ar\include\plugin">
+      <UniqueIdentifier>{21CEDCD9-FE36-40DA-A1E1-2F9D85BAE00E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins\ocr\paddle_cpu">
+      <UniqueIdentifier>{5B0B9B99-1AB9-4E9D-8154-EC185AF50627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\include\ppocr">
+      <UniqueIdentifier>{9B8338D0-591E-410D-AE32-31797F58E9AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins\ocr\paddle_common">
+      <UniqueIdentifier>{A4AAA5BF-232F-432F-8CDC-3E82810F662D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\src\ppocr">
+      <UniqueIdentifier>{1C326305-A760-422F-AF96-4D68C0E33C02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ar\include\vision">
+      <UniqueIdentifier>{72340039-40B7-418B-ABEB-A8E3D467CC73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ar\include\plugin\PluginApi.h">
+      <Filter>ar\include\plugin</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\plugins\ocr\paddle_cpu\PluginExports.cpp">
+      <Filter>plugins\ocr\paddle_cpu</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\3rdparty\include\ppocr\clipper.h">
+      <Filter>3rdparty\include\ppocr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\include\ppocr\utility.h">
+      <Filter>3rdparty\include\ppocr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\ocr\paddle_common\PaddleEngine.h">
+      <Filter>plugins\ocr\paddle_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\ocr\paddle_common\TextDetector.h">
+      <Filter>plugins\ocr\paddle_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\ocr\paddle_common\TextRecognizer.h">
+      <Filter>plugins\ocr\paddle_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\ocr\paddle_common\Dictionary.h">
+      <Filter>plugins\ocr\paddle_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\ocr\paddle_common\OrtSession.hpp">
+      <Filter>plugins\ocr\paddle_common</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\plugins\ocr\paddle_common\TextDetector.cpp">
+      <Filter>plugins\ocr\paddle_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\ocr\paddle_common\TextRecognizer.cpp">
+      <Filter>plugins\ocr\paddle_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\ocr\paddle_common\Dictionary.cpp">
+      <Filter>plugins\ocr\paddle_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\src\ppocr\clipper.cpp">
+      <Filter>3rdparty\src\ppocr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\src\ppocr\postprocess_op.cpp">
+      <Filter>3rdparty\src\ppocr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\src\ppocr\utility.cpp">
+      <Filter>3rdparty\src\ppocr</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\ar\include\vision\Ocr.h">
+      <Filter>ar\include\vision</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

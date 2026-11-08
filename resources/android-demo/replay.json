@@ -1,0 +1,1 @@
+{"schema_version":1,"steps":[{"image":"before.png","expect":{"type":"Click","target":[320,180]},"action_delay_ms":20},{"image":"after.png"}]}

@@ -1,0 +1,21 @@
+﻿index,id,language,kind,scene,source_index,box,independent_text,decision,notes,audited_by,audited_at
+0,ja-accept-b1c-ac0105ed46d0-005,ja,ui,normal-hard-stages,4,"[767, 263, 287, 34]",カムパネルラ広場・第2エリア,agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+1,ja-accept-b1c-33f6b0a1d499-024,ja,ui,sweep-confirm,23,"[178, 385, 376, 33]",120秒以内にすべての敵を撃破する。,agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+2,ja-accept-b1c-6a2f5ea37eb5-040,ja,ui,arena-ranking,39,"[85, 474, 113, 32]",保有チケット,agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+3,ja-accept-b1c-def0128ffec9-053,ja,ui,formation,52,"[1149, 285, 107, 38]",開始スキル,agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+4,ja-accept-b1c-eddff2943cb8-091,ja,ui,students,90,"[653, 176, 149, 35]",ムツキ（正月）,agree,括号为全角并有前导空格的观感，按像素保留全角；NFKC 后与半角等价,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+5,ja-accept-b1c-ac0105ed46d0-011,ja,numbers,normal-hard-stages,10,"[508, 6, 87, 32]",147/240,agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+6,ja-accept-b1c-ac0105ed46d0-012,ja,numbers,normal-hard-stages,11,"[715, 6, 126, 32]","789,805,118",agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+7,ja-accept-b1c-6a2f5ea37eb5-046,ja,numbers,arena-ranking,45,"[555, 199, 45, 46]",72,agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+8,ja-accept-b1c-def0128ffec9-061,ja,numbers,formation,60,"[661, 520, 32, 29]",3,agree,框含完整星级徽章轮廓，符合约定；字符只有 3,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+9,ja-accept-b1c-4baf94ccb6ad-069,ja,numbers,bounty,68,"[318, 551, 33, 30]",x1,agree,画面字形为斜体小写 x；标注写 ×，评分 x/× 统一，不影响,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+10,zh-Hant-accept-b1c-d08a61dd42c9-002,zh-Hant,ui,home,1,"[31, 253, 39, 27]",任務,roi-fix,"文字正确；右上角红色通知角标约四分之一落在框内。建议右边收 3px：[31,253,36,27]（文字右缘约 x=64）。不改文字",Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+11,zh-Hant-accept-b1c-065acab9f173-025,zh-Hant,ui,bounty,24,"[190, 252, 96, 38]",敵人/相性,agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+12,zh-Hant-accept-b1c-967f64991ebc-041,zh-Hant,ui,event-stages,40,"[777, 152, 168, 38]",藍線交叉樞紐,agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+13,zh-Hant-accept-b1c-1f97f16288ea-067,zh-Hant,ui,students,66,"[478, 403, 119, 37]",花子(泳裝),agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+14,zh-Hant-accept-b1c-4fd2764fb2c5-079,zh-Hant,ui,student-details,78,"[375, 136, 139, 41]",我要衝了！,agree,,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+15,zh-Hant-accept-b1c-ef689b690c57-065,zh-Hant,numbers,shop,64,"[706, 420, 35, 33]",x1,agree,同第 9 条：画面为斜体小写 x，评分统一后无影响,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+16,zh-Hant-accept-b1c-f168dcac60cc-077,zh-Hant,numbers,students,76,"[929, 619, 35, 34]",23,agree,整帧为 Lv.23，框只含 23，约定一致,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+17,zh-Hant-accept-b1c-4fd2764fb2c5-084,zh-Hant,numbers,student-details,83,"[479, 498, 88, 36]",1531/19,agree,整帧确认为 1531/19，框完整,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+18,zh-Hant-accept-b1c-4fd2764fb2c5-085,zh-Hant,numbers,student-details,84,"[586, 233, 45, 22]",742%,text-ok-meta-fix,文字 742% 正确，但 number_form 标为 integer，应为 percent；框左贴 7、右贴“的”，可左右各扩 1～2px 但不得含“力”“的”,Claude (Opus 5.5),2026-11-01T09:01:39-08:00
+19,zh-Hant-accept-b1c-642e27b216dc-094,zh-Hant,numbers,missions,93,"[602, 486, 100, 31]",4830 / 4830,agree,斜杠两侧确有空格，按像素保留；请确认数字解析器接受 a / b 带空格,Claude (Opus 5.5),2026-11-01T09:01:39-08:00

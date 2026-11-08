@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-11-01T13:43:34.704288+00:00",
+  "selection": "Profiles chosen from original tune set; initial test retained with 11 documented annotation amendments; supplements held out. No changes made to OCR profile after first test. Eleven further ROI boundary corrections are recorded in annotation-amendments-v3.json. Model/profile hashes unchanged.",
+  "files": {
+    "tests/ocr_corpus/annotations.jsonl": "dd1445af8466d1f1a07b70013e03826d1961d2a9eabdce89f0aa6c877c094aa2",
+    "models/ocr/ja.json": "4fc052d407e22708e3b60d43d48d6d85e5366f844eec24e294c240fb7bd79794",
+    "models/ocr/zh-Hant.json": "7717661346852e5ddaa0668b5a1064a6cc23b4af0d394bb20a7fafe55b42b68a",
+    "models/official/chinese_cht_PP-OCRv3_mobile_rec.onnx": "ab0aa3258af94e97c34d099e3488d8644f092b326ceff53c71418076e6174419",
+    "models/official/chinese_cht_PP-OCRv3_mobile_rec.provenance.json": "b19690d3873bae78f4be4f547a75419a841c86079d012d194f84a9f5cd4e3cd7",
+    "models/official/chinese_cht_PP-OCRv3_mobile_rec.txt": "832551fee1f2fbc97508772d81ebdc8dba12c00de97a35c71c9ddf43ddac1a83",
+    "models/official/en_PP-OCRv4_mobile_rec.onnx": "5634cfafad2909f9fcd9886fe8e526c3480038ead12818598e3c91b3caa13912",
+    "models/official/en_PP-OCRv4_mobile_rec.provenance.json": "d802742b55938cde318833e3f60d2c3a95c75368348793a97d010cd3a0323158",
+    "models/official/en_PP-OCRv4_mobile_rec.txt": "5662df9d2d03f0e8ca0d3b0649d6acbab904b6a14b3d3521463c71c37c668ce3",
+    "models/official/japan_PP-OCRv3_mobile_rec.onnx": "7bf1bba295f6a289ebab6ade35d9a8a92acdcc9843c8da72640f463f373c1558",
+    "models/official/japan_PP-OCRv3_mobile_rec.provenance.json": "b8e506d2df995327aade7baeb4cd6665db5c1099d565b50c4f2f61fff7ba6758",
+    "models/official/japan_PP-OCRv3_mobile_rec.txt": "1dcfcb41eec90576a945b3084f22ade11ced506e24f14879245b071698f308e8",
+    "models/official/PP-OCRv5_mobile_det.onnx": "c8d9b07063420ce5365c74e42532de48238feeeedcdb7a330b195708bc38a93f",
+    "models/official/PP-OCRv5_mobile_det.provenance.json": "e88274807e9bf58094ffa1b9c4a953aec5aebfae7ea213b7c3983d2d9dd3eaa2",
+    "models/official/PP-OCRv5_mobile_rec.onnx": "bcb195e3463eb9e46ef419b8a01ea4729577de5fd63c64f0a762e43bd64256e7",
+    "models/official/PP-OCRv5_mobile_rec.provenance.json": "255422cf4e38b3c5e889748c36df9554883ab71bcbda12231589429171a704f0",
+    "models/official/PP-OCRv5_mobile_rec.txt": "d1979e9f794c464c0d2e0b70a7fe14dd978e9dc644c0e71f14158cdf8342af1b",
+    "tests/ocr_corpus/annotations-reviewed-v3.jsonl": "dd1445af8466d1f1a07b70013e03826d1961d2a9eabdce89f0aa6c877c094aa2"
+  }
+}

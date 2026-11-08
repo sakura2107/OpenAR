@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ar\include\plugin">
+      <UniqueIdentifier>{2A1142CD-2B4F-4648-B0C9-232BC502DA55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ar\include\vision">
+      <UniqueIdentifier>{AB1DC0BC-2E49-4CDB-908D-B4953C206752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins\matcher\ssim_cpu">
+      <UniqueIdentifier>{432E83D6-0C24-45DE-AC08-F3F8BF893C63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ar\include\plugin\PluginApi.h">
+      <Filter>ar\include\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ar\include\vision\Matcher.h">
+      <Filter>ar\include\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\matcher\ssim_cpu\SsimCpu.h">
+      <Filter>plugins\matcher\ssim_cpu</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\plugins\matcher\ssim_cpu\SsimCpu.cpp">
+      <Filter>plugins\matcher\ssim_cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\matcher\ssim_cpu\PluginExports.cpp">
+      <Filter>plugins\matcher\ssim_cpu</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,34 @@
+name: Windows CPU regression
+on:
+  workflow_dispatch:
+jobs:
+  cpu:
+    # Dependencies are supplied by the operator; no machine paths in this workflow.
+    runs-on: [self-hosted, windows, x64, openar]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure local ORT dependency
+        shell: pwsh
+        run: |
+          if (-not $env:OPENAR_ONNX_CPU_ROOT) { throw 'Set OPENAR_ONNX_CPU_ROOT on the runner.' }
+          $ortPath = [System.Security.SecurityElement]::Escape($env:OPENAR_ONNX_CPU_ROOT)
+          "<Project><PropertyGroup><OpenAROnnxCpuRoot>$ortPath</OpenAROnnxCpuRoot></PropertyGroup></Project>" | Set-Content deps.local.props
+          if (-not $env:OPENAR_DEPENDENCY_ROOT) { throw 'Set OPENAR_DEPENDENCY_ROOT to a prepared 3rdparty layout outside the checkout.' }
+          foreach ($relative in @('include/opencv2','lib/opencv','bin/opencv','bin/adb')) {
+            $dependency = Join-Path $env:OPENAR_DEPENDENCY_ROOT $relative
+            if (-not (Test-Path -LiteralPath $dependency)) { throw "Missing dependency: $relative" }
+            $parent = Split-Path (Join-Path '3rdparty' $relative)
+            New-Item -ItemType Directory -Path $parent -Force | Out-Null
+            Copy-Item -LiteralPath $dependency -Destination $parent -Recurse -Force
+          }
+      - name: Build and test
+        shell: pwsh
+        run: ./scripts/check.ps1 -Profile cpu
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cpu-test-evidence
+          path: |
+            out/build-cpu-Release.log
+            out/cpu/Release/test-artifacts/
+            out/cpu/check-traces/

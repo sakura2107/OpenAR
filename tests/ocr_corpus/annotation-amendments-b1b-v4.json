@@ -1,0 +1,784 @@
+{
+  "source_sha256": "dd1445af8466d1f1a07b70013e03826d1961d2a9eabdce89f0aa6c877c094aa2",
+  "amended_sha256": "bc255b17b0d6b705f08503e28e475ae39e2f0a185d3b004957d90565bd138db1",
+  "audit_csv_sha256": "140cb3a79dd7683b883bac787c062aaf6065bc0dabecfd2b2fab42e25f415b30",
+  "created_at": "2026-11-01T14:46:29.910787+00:00",
+  "texts_changed": 0,
+  "changes": [
+    {
+      "id": "ja-4548cab0b2ad-region-019",
+      "old_box": [
+        584,
+        338,
+        14,
+        12
+      ],
+      "new_box": [
+        584,
+        334,
+        14,
+        20
+      ],
+      "text": "4",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "ja-4548cab0b2ad-region-020",
+      "old_box": [
+        696,
+        338,
+        14,
+        14
+      ],
+      "new_box": [
+        696,
+        334,
+        14,
+        22
+      ],
+      "text": "4",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "ja-4548cab0b2ad-region-044",
+      "old_box": [
+        697,
+        492,
+        13,
+        10
+      ],
+      "new_box": [
+        697,
+        488,
+        13,
+        18
+      ],
+      "text": "3",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "ja-8765f6d93064-region-031",
+      "old_box": [
+        1013,
+        513,
+        24,
+        16
+      ],
+      "new_box": [
+        1011,
+        509,
+        28,
+        24
+      ],
+      "text": "x3",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "ja-db8b531f83a4-region-023",
+      "old_box": [
+        390,
+        479,
+        34,
+        14
+      ],
+      "new_box": [
+        388,
+        475,
+        38,
+        22
+      ],
+      "text": "x125",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-70c9c643150e-region-033",
+      "old_box": [
+        321,
+        591,
+        23,
+        15
+      ],
+      "new_box": [
+        319,
+        587,
+        27,
+        23
+      ],
+      "text": "x1",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-4dee430bb185-region-038",
+      "old_box": [
+        426,
+        604,
+        26,
+        16
+      ],
+      "new_box": [
+        424,
+        600,
+        30,
+        24
+      ],
+      "text": "x79",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-209d92a15c5c-region-006",
+      "old_box": [
+        716,
+        199,
+        22,
+        15
+      ],
+      "new_box": [
+        716,
+        195,
+        22,
+        23
+      ],
+      "text": "14",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-005",
+      "old_box": [
+        1109,
+        75,
+        12,
+        16
+      ],
+      "new_box": [
+        1109,
+        71,
+        12,
+        24
+      ],
+      "text": "6",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-031",
+      "old_box": [
+        721,
+        371,
+        23,
+        16
+      ],
+      "new_box": [
+        719,
+        367,
+        27,
+        24
+      ],
+      "text": "x1",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-032",
+      "old_box": [
+        1025,
+        371,
+        19,
+        14
+      ],
+      "new_box": [
+        1023,
+        367,
+        23,
+        22
+      ],
+      "text": "x1",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-033",
+      "old_box": [
+        1173,
+        370,
+        24,
+        17
+      ],
+      "new_box": [
+        1171,
+        366,
+        28,
+        25
+      ],
+      "text": "x1",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-051",
+      "old_box": [
+        721,
+        623,
+        24,
+        17
+      ],
+      "new_box": [
+        719,
+        619,
+        28,
+        25
+      ],
+      "text": "x1",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-052",
+      "old_box": [
+        870,
+        626,
+        27,
+        14
+      ],
+      "new_box": [
+        868,
+        622,
+        31,
+        22
+      ],
+      "text": "x1",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "ja-1782789c70b1-region-014-supplement1",
+      "old_box": [
+        1190,
+        213,
+        28,
+        15
+      ],
+      "new_box": [
+        1188,
+        209,
+        32,
+        23
+      ],
+      "text": "x81",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-8bb09fac6719-region-028-supplement1",
+      "old_box": [
+        1037,
+        514,
+        31,
+        16
+      ],
+      "new_box": [
+        1035,
+        510,
+        35,
+        24
+      ],
+      "text": "x30",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    },
+    {
+      "id": "zh-Hant-864f93c7cadd-region-027-supplement3",
+      "old_box": [
+        106,
+        435,
+        26,
+        17
+      ],
+      "new_box": [
+        106,
+        431,
+        26,
+        25
+      ],
+      "text": "20",
+      "reason": "Visual boundary review: include complete digit/italic outline and vertical margin; no text changes."
+    }
+  ],
+  "small_roi_review": [
+    {
+      "id": "ja-5fe0121af3e0-region-009",
+      "old_box": [
+        129,
+        97,
+        31,
+        16
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "ja-5fe0121af3e0-region-013",
+      "old_box": [
+        57,
+        195,
+        31,
+        16
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "ja-4548cab0b2ad-region-019",
+      "old_box": [
+        584,
+        338,
+        14,
+        12
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "ja-4548cab0b2ad-region-020",
+      "old_box": [
+        696,
+        338,
+        14,
+        14
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "ja-4548cab0b2ad-region-044",
+      "old_box": [
+        697,
+        492,
+        13,
+        10
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "ja-8765f6d93064-region-031",
+      "old_box": [
+        1013,
+        513,
+        24,
+        16
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "ja-db8b531f83a4-region-023",
+      "old_box": [
+        390,
+        479,
+        34,
+        14
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-3d6e755be182-region-035",
+      "old_box": [
+        225,
+        596,
+        35,
+        16
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-037e0343c4af-region-033",
+      "old_box": [
+        225,
+        596,
+        35,
+        16
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-70c9c643150e-region-033",
+      "old_box": [
+        321,
+        591,
+        23,
+        15
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-4dee430bb185-region-006",
+      "old_box": [
+        118,
+        153,
+        11,
+        16
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-4dee430bb185-region-038",
+      "old_box": [
+        426,
+        604,
+        26,
+        16
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-209d92a15c5c-region-006",
+      "old_box": [
+        716,
+        199,
+        22,
+        15
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-005",
+      "old_box": [
+        1109,
+        75,
+        12,
+        16
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-013",
+      "old_box": [
+        714,
+        166,
+        12,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-014",
+      "old_box": [
+        860,
+        165,
+        22,
+        17
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-015",
+      "old_box": [
+        1010,
+        165,
+        24,
+        17
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-031",
+      "old_box": [
+        721,
+        371,
+        23,
+        16
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-032",
+      "old_box": [
+        1025,
+        371,
+        19,
+        14
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-033",
+      "old_box": [
+        1173,
+        370,
+        24,
+        17
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-038",
+      "old_box": [
+        714,
+        419,
+        12,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-051",
+      "old_box": [
+        721,
+        623,
+        24,
+        17
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-052",
+      "old_box": [
+        870,
+        626,
+        27,
+        14
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-060",
+      "old_box": [
+        1006,
+        671,
+        32,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-11",
+      "old_box": [
+        713,
+        137,
+        15,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-12",
+      "old_box": [
+        864,
+        137,
+        15,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-13",
+      "old_box": [
+        1015,
+        137,
+        15,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-14",
+      "old_box": [
+        1169,
+        138,
+        8,
+        12
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-15",
+      "old_box": [
+        713,
+        389,
+        15,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-16",
+      "old_box": [
+        864,
+        389,
+        15,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-17",
+      "old_box": [
+        1015,
+        389,
+        15,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-18",
+      "old_box": [
+        1169,
+        391,
+        8,
+        12
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-19",
+      "old_box": [
+        713,
+        641,
+        15,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-20",
+      "old_box": [
+        864,
+        641,
+        15,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-21",
+      "old_box": [
+        1015,
+        641,
+        15,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-284f5e176210-region-001-manual-22",
+      "old_box": [
+        1166,
+        641,
+        9,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "ja-1782789c70b1-region-014-supplement1",
+      "old_box": [
+        1190,
+        213,
+        28,
+        15
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-8bb09fac6719-region-017-supplement1",
+      "old_box": [
+        1036,
+        243,
+        32,
+        15
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-8bb09fac6719-region-028-supplement1",
+      "old_box": [
+        1037,
+        514,
+        31,
+        16
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    },
+    {
+      "id": "zh-Hant-8000181feee6-region-019-supplement1",
+      "old_box": [
+        194,
+        293,
+        18,
+        12
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-8000181feee6-region-020-supplement1",
+      "old_box": [
+        264,
+        293,
+        20,
+        14
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-8000181feee6-region-021-supplement1",
+      "old_box": [
+        530,
+        292,
+        30,
+        16
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-8000181feee6-region-023-supplement1",
+      "old_box": [
+        678,
+        292,
+        24,
+        16
+      ],
+      "changed": false,
+      "decision": "retain: glyph fits; avoid adjacent labels"
+    },
+    {
+      "id": "zh-Hant-864f93c7cadd-region-027-supplement3",
+      "old_box": [
+        106,
+        435,
+        26,
+        17
+      ],
+      "changed": true,
+      "decision": "expand clipped/tight boundary"
+    }
+  ]
+}
